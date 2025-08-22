@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="assets/css/custom.css">
 
+![The Official Dottore Schizo Gooner](https://i.imgur.com/Qsszm6i.gif)
+
 1. [Downloads](#downloads)  
 2. [About](#about)  
 3. [Lexicon](#lexicon)  
