@@ -1,14 +1,31 @@
 # Marinara's LLM Hub
 
-[TOC]
+1. [Downloads](#downloads)  
+2. [About](#about)  
+3. [Lexicon](#lexicon)  
+4. [Guides](#guides)  
+   - [How To Import A Preset?](#how-to-import-a-preset)  
+   - [How To Import A Regex?](#how-to-import-a-regex)  
+   - [How To Import A Logit Bias?](#how-to-import-a-logit-bias)  
+   - [How To Import A Character Card?](#how-to-import-a-character-card)  
+5. [FAQ](#faq)  
+6. [Recommendations](#recommendations)  
+   - [Top 10 Models](#top-10-models)  
+   - [Model Providers](#model-providers)  
+   - [Preset Creators](#preset-creators)  
+   - [SillyTavern Themes](#sillytavern-themes)  
+   - [Discord Buddy](#discord-buddy)  
+7. [Support Me](#support-me)  
+8. [Contact](#contact)  
+9. [Fanarts](#fanarts)  
 
 # Downloads
 
-!!! info Version
-    The newest version is 5.0.
+> [!NOTE]
+> The newest version is 5.0.
 
-!!! warning Chat Completion
-     The preset below is for Chat Completion only. For my older Text Completion presets, visit my [HuggingFace](https://huggingface.co/MarinaraSpaghetti/SillyTavern-Settings).
+> [!WARNING]
+> The preset below is for Chat Completion only. For my older Text Completion presets, visit my [HuggingFace](https://huggingface.co/MarinaraSpaghetti/SillyTavern-Settings).
 
 [Master Download](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials.zip) | [Preset](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Preset) | [Regexes](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Regexes) | [Logit Bias](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Logit%20Bias) | [Professor Mari](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Card) | [Dottore](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials/Cards/Dottore.png) **ᴺᴱᵂ** 
 :----: | :----: | :----: | :----: | :----: | :----:
@@ -18,10 +35,10 @@ Downloads the entire .zip file that includes the preset, regexes, logit bias, an
 
 # About
 
--> Howdy, I'm Marinara!
+Howdy, I'm Marinara!
 An LLM enthusiast, teacher, merger, and prompt engineer since late 2023. Additionally, an artist and coder on occasion. I'm the author of models such as [NemoMix Unleashed](https://huggingface.co/MarinaraSpaghetti/NemoMix-Unleashed-12B) and many universal prompts, including professional ones for companies like [Tolan](https://www.tolans.com/), [MyDreamCompanion](https://www.mydreamcompanion.com/), or [Toffee.ai](https://toffee.ai/). I consult for various AI services and offer commissions for cards, prompts, and artworks.
 Here you can find my roleplaying and creative writing presets, as well as recommendations, cards, and guides. All related to LLMs. Feel free to suggest new sections to add or models to test. I hope you'll find it informative, helpful, and fun to read.
-Cheers and happy gooning! <-
+Cheers and happy gooning!
 
 # Lexicon
 
@@ -58,8 +75,9 @@ Refusal | Skill issue
 # Guides
 
 ## How To Import A Preset?
-!!! info
-    Presets include instructions and settings for models. Different ones offer different experiences. There is no "best" or "worst" preset; it's all a matter of your personal preference. Use the one you like best, and feel free to write your own, custom ones!
+
+> [!TIP]
+> Presets include instructions and settings for models. Different ones offer different experiences. There is no "best" or "worst" preset; it's all a matter of your personal preference. Use the one you like best, and feel free to write your own, custom ones!
 
 ![How to import a preset](https://i.imgur.com/liAlNTz.gif)
 
@@ -73,8 +91,8 @@ You can access all of your imported presets at any time.
 
 ## How To Import A Regex?
 
-!!! info
-    Regexes aren't required, but they can improve formatting and fix errors in the outputs. For example, my regexes remove overused em-dashes, fix quotation marks, and turn `...` into `…`, reducing the overall token count.
+> [!TIP]
+> Regexes aren't required, but they can improve formatting and fix errors in the outputs. For example, my regexes remove overused em-dashes, fix quotation marks, and turn `...` into `…`, reducing the overall token count.
 
 ![How to import a regex](https://i.imgur.com/t0GV1iq.gif)
 
@@ -87,11 +105,11 @@ You can access all of your imported presets at any time.
 
 ## How To Import A Logit Bias?
 
-!!! warning Important
-    Logit Bias works **ONLY** with OpenAI models (GPTs). I based mine on [Avi's](https://rentry.org/avaniJB), so all credit goes to them. !~ Logit Bias is a must if you want to use OAI models. ~!
+> [!IMPORTANT]
+> Logit Bias works **ONLY** with OpenAI models (GPTs). I based mine on [Avi's](https://rentry.org/avaniJB), so all credit goes to them. !~ Logit Bias is a must if you want to use OAI models. ~!
 
-!!! info
-    Logit Bias allows you to control which tokens are more or less likely to appear in the model's output. The values can be set between -100 (semi-banning the specified token) and 100 (encouraging the model to use a token at every opportunity). Number 0 is neutral. Read more about it [here](https://help.openai.com/en/articles/5247780-using-logit-bias-to-alter-token-probability-with-the-openai-api).
+> [!TIP]
+> Logit Bias allows you to control which tokens are more or less likely to appear in the model's output. The values can be set between -100 (semi-banning the specified token) and 100 (encouraging the model to use a token at every opportunity). Number 0 is neutral. Read more about it [here](https://help.openai.com/en/articles/5247780-using-logit-bias-to-alter-token-probability-with-the-openai-api).
 
 ![How to import a logit bias](https://i.imgur.com/gomeFrY.gif)
 
@@ -104,8 +122,8 @@ You can access all of your imported presets at any time.
 
 ## How To Import A Character Card?
 
-!!! info
-    Character cards are characters you chat or roleplay with. These don't necessarily have to be characters; they can also include assistants, narrators, and even entire worlds.
+> [!TIP]
+> Character cards are characters you chat or roleplay with. These don't necessarily have to be characters; they can also include assistants, narrators, and even entire worlds.
 
 ![How to import a character card](https://i.imgur.com/VULGDg2.gif)
 
@@ -141,11 +159,14 @@ Your character's appearance here.
 
 ## Top 10 Models
 
-!!! info Last updated on 19.08.2025
-    It's safe to assume the first model on the list is the one I'm currently using for main roleplay. Please keep in mind this is my subjective ranking, based on my own preferences.
+> [!NOTE]
+> Last updated on 19.08.2025
 
-!!! warning Warning
-    **ChatGPT-4o** and **GPT-4o** are !~ two different models! ~! I know, not confusing at all. The one I recommend is `chatgpt-4o-latest` ('Latte'). The other one, GPT-4o, is pretty bad.
+> [!TIP]
+> It's safe to assume the first model on the list is the one I'm currently using for main roleplay. Please keep in mind this is my subjective ranking, based on my own preferences.
+
+> [!WARNING]
+> **ChatGPT-4o** and **GPT-4o** are !~ two different models! ~! I know, not confusing at all. The one I recommend is `chatgpt-4o-latest` ('Latte'). The other one, GPT-4o, is pretty bad.
 
 Position | Model | Context | Censorship | Strengths | Weaknesses
 :----: | :----: | :----: | :----: | :----: | :----:
@@ -161,8 +182,8 @@ Position | Model | Context | Censorship | Strengths | Weaknesses
 10 | [Grok 4](https://openrouter.ai/x-ai/grok-4) | 256k | None | Grok, is this true? | It's like a teenager going through puberty, so horny and not very smart
 Extra | [NemoMix-Unleashed-12B](https://huggingface.co/MarinaraSpaghetti/NemoMix-Unleashed-12B) | 128k | None | Obligatory shill of my model, some claim it still holds up | Old and small
 
-!!! warning Testing
-    ~~I noticed some underlying issues with GPT-5. I'm barely able to control it; it feels like every time I get a generation, it's like a different model responding. Requires further testing. It may be shit, actually. It's just shit. Stick to ChatGPT-4o while you can.~~ They fixed GPT-5 at last, so I've added it to the ranking officially.
+> [!WARNING]
+> ~~I noticed some underlying issues with GPT-5. I'm barely able to control it; it feels like every time I get a generation, it's like a different model responding. Requires further testing. It may be shit, actually. It's just shit. Stick to ChatGPT-4o while you can.~~ They fixed GPT-5 at last, so I've added it to the ranking officially.
 
 ## Model Providers
 
@@ -196,20 +217,24 @@ Hey, while you're here, perhaps you could also check out my [Discord Buddy](http
 
 # Support Me
 
--> Enjoy what I do? Please, consider supporting me on Ko-fi! These donations help fund my models' testing and my prompt engineering endeavors!
+Enjoy what I do? Please, consider supporting me on Ko-fi! These donations help fund my models' testing and my prompt engineering endeavors!
 https://ko-fi.com/marinara_spaghetti
 Thank you!
-💙 <-
+💙
 
 # Contact
 
--> Discord:
+Discord:
 ==marinara_spaghetti==
 E-mail:
 ==mgrabower97@gmail.com==
 Socials:
-==https://linktr.ee/Spicy_Marinara== <-
+==https://linktr.ee/Spicy_Marinara==
 
 # Fanarts
 
--> ![Vynocchi](https://i.imgur.com/SjQYnZD.png){200wv:200hv} ![Huxnt3rx](https://i.imgur.com/NbRDrCt.jpeg){200wv:200hv} ![Huxnt3rx](https://i.imgur.com/cKRfHeM.png){200wv:200hv} ![Xixica](https://i.imgur.com/t4vn272.png){200wv:200hv} ![Xixica](https://i.imgur.com/dhGFKvc.png){200wv:200hv} <-
+![Vynocchi](https://i.imgur.com/SjQYnZD.png)
+![Huxnt3rx](https://i.imgur.com/NbRDrCt.jpeg)
+![Huxnt3rx](https://i.imgur.com/cKRfHeM.png)
+![Xixica](https://i.imgur.com/t4vn272.png)
+![Xixica](https://i.imgur.com/dhGFKvc.png)
