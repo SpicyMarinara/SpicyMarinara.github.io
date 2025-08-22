@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="assets/css/custom.css">
+
 1. [Downloads](#downloads)  
 2. [About](#about)  
 3. [Lexicon](#lexicon)  
@@ -220,7 +222,7 @@ Hey, while you're here, perhaps you could also check out my [Discord Buddy](http
 
 Enjoy what I do? Please, consider supporting me on Ko-fi! These donations help fund my models' testing and my prompt engineering endeavors!
 
--> [Ko-fi](https://ko-fi.com/marinara_spaghetti) <-
+[Ko-fi](https://ko-fi.com/marinara_spaghetti)
 
 Thank you!
 
