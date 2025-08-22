@@ -1,0 +1,65 @@
+/* === Il Dottore / Fatui Custom Theme === */
+
+/* General body */
+body {
+  background-color: #0b0d12 !important; /* near black, like midnight lab */
+  color: #e0e6ed !important; /* pale steel-grey text */
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: #00e0e6 !important; /* Dottore cyan highlight */
+  text-shadow: 0 0 6px rgba(0, 224, 230, 0.3);
+  letter-spacing: 0.5px;
+}
+
+/* Links */
+a {
+  color: #00c7d6 !important; /* cyan link */
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #33f6ff !important; /* brighter cyan on hover */
+  text-shadow: 0 0 8px rgba(51, 246, 255, 0.6);
+}
+
+/* Code blocks */
+pre, code {
+  background-color: #141820 !important; /* darker panel */
+  color: #e0e6ed !important;
+  border-left: 3px solid #00e0e6;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Buttons (like "Read More") */
+.btn, button {
+  background-color: #00c7d6 !important;
+  color: #0b0d12 !important;
+  border-radius: 6px;
+  border: none;
+}
+.btn:hover, button:hover {
+  background-color: #33f6ff !important;
+  color: #000 !important;
+}
+
+/* Navigation bar */
+.site-nav, .greedy-nav {
+  background: #0b0d12 !important;
+  border-bottom: 1px solid #00e0e6;
+}
+.site-nav a {
+  color: #e0e6ed !important;
+}
+.site-nav a:hover {
+  color: #33f6ff !important;
+}
+
+/* Footer */
+.page__footer {
+  background: #0b0d12 !important;
+  color: #777 !important;
+  border-top: 1px solid #00e0e6;
+}
