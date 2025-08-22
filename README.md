@@ -249,8 +249,10 @@ https://linktr.ee/Spicy_Marinara
 
 # Fanarts
 
-![Vynocchi](https://i.imgur.com/SjQYnZD.png)
-![Huxnt3rx](https://i.imgur.com/NbRDrCt.jpeg)
-![Huxnt3rx](https://i.imgur.com/cKRfHeM.png)
-![Xixica](https://i.imgur.com/t4vn272.png)
-![Xixica](https://i.imgur.com/dhGFKvc.png)
+<div align="center">
+  <img src="https://i.imgur.com/SjQYnZD.png" alt="Vynocchi" style="width:18%; max-width:200px;">
+  <img src="https://i.imgur.com/NbRDrCt.jpeg" alt="Huxnt3rx" style="width:18%; max-width:200px;">
+  <img src="https://i.imgur.com/cKRfHeM.png" alt="Huxnt3rx" style="width:18%; max-width:200px;">
+  <img src="https://i.imgur.com/t4vn272.png" alt="Xixica" style="width:18%; max-width:200px;">
+  <img src="https://i.imgur.com/dhGFKvc.png" alt="Xixica" style="width:18%; max-width:200px;">
+</div>
