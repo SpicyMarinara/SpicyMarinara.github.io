@@ -1,3 +1,19 @@
+<head>
+  <meta name="description" content="Guides, presets, and model recommendations">
+
+  <!-- OpenGraph for social previews -->
+  <meta property="og:title" content="Marinara's LLM Hub">
+  <meta property="og:description" content="Guides, presets, and model recommendations">
+  <meta property="og:image" content="https://i.imgur.com/4NQOuwW.jpeg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/gif" href="https://i.imgur.com/RdEhBhl.gif">
+
+  <!-- Dark theme preference -->
+  <meta name="color-scheme" content="dark">
+</head>
+
 # Marinara's LLM Hub
 
 1. [Downloads](#downloads)  
