@@ -31,9 +31,14 @@
 > 
 > The preset below is for Chat Completion only. For my older Text Completion presets, visit my [HuggingFace](https://huggingface.co/MarinaraSpaghetti/SillyTavern-Settings).
 
-[Master Download](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials.zip) | [Preset](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Preset) | [Regexes](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Regexes) | [Logit Bias](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Logit%20Bias) | [Professor Mari](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials/Cards/Professor%20Mari.png) | [Dottore](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials/Cards/Dottore.png) **ᴺᴱᵂ** 
-:----: | :----: | :----: | :----: | :----: | :----:
-Downloads the entire .zip file that includes the preset, regexes, logit bias, and character cards | Universal preset alone | Regexes that clean formatting errors, remove em dashes, and unify formats | Logit bias for OpenAI models | Professor Mari's character card; an assistant who will teach you all about LLMs and help you out with creating character cards | Dottore's character card, the Second of the Eleven Fatui Harbingers from Genshin Impact
+Link | Description
+:----: | :----:
+[Master Download](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials.zip) | Downloads the entire .zip file that includes the preset, regexes, logit bias, and character cards
+[Preset](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Preset) | Universal preset alone
+[Regexes](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Regexes) | Regexes that clean formatting errors, remove em dashes, and unify formats
+[Logit Bias](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Logit%20Bias) | Logit bias for OpenAI models
+[Professor Mari](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials/Cards/Professor%20Mari.png) | Professor Mari's character card, an assistant who will teach you all about LLMs and help you out with creating character cards
+[Dottore](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials/Cards/Dottore.png) **ᴺᴱᵂ** | Dottore's character card, the Second of the Eleven Fatui Harbingers from Genshin Impact
 
 ![How to download](https://i.imgur.com/G610Q95.png)
 
