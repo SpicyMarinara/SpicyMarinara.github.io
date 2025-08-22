@@ -22,9 +22,11 @@
 # Downloads
 
 > 📌 **Note**
+> 
 > The newest version is 5.0.
 
 > ⚠️ **Warning**
+> 
 > The preset below is for Chat Completion only. For my older Text Completion presets, visit my [HuggingFace](https://huggingface.co/MarinaraSpaghetti/SillyTavern-Settings).
 
 [Master Download](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials.zip) | [Preset](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Preset) | [Regexes](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Regexes) | [Logit Bias](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Logit%20Bias) | [Professor Mari](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Card) | [Dottore](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials/Cards/Dottore.png) **ᴺᴱᵂ** 
@@ -79,6 +81,7 @@ Refusal | Skill issue
 ## How To Import A Preset?
 
 > 💡 **Tip**
+> 
 > Presets include instructions and settings for models. Different ones offer different experiences. There is no "best" or "worst" preset; it's all a matter of your personal preference. Use the one you like best, and feel free to write your own, custom ones!
 
 ![How to import a preset](https://i.imgur.com/liAlNTz.gif)
@@ -94,6 +97,7 @@ You can access all of your imported presets at any time.
 ## How To Import A Regex?
 
 > 💡 **Tip**
+> 
 > Regexes aren't required, but they can improve formatting and fix errors in the outputs. For example, my regexes remove overused em-dashes, fix quotation marks, and turn `...` into `…`, reducing the overall token count.
 
 ![How to import a regex](https://i.imgur.com/t0GV1iq.gif)
@@ -108,9 +112,11 @@ You can access all of your imported presets at any time.
 ## How To Import A Logit Bias?
 
 > ❗**Important**
+> 
 > Logit Bias works **ONLY** with OpenAI models (GPTs). I based mine on [Avi's](https://rentry.org/avaniJB), so all credit goes to them. !~ Logit Bias is a must if you want to use OAI models. ~!
 
 > 💡 **Tip**
+> 
 > Logit Bias allows you to control which tokens are more or less likely to appear in the model's output. The values can be set between -100 (semi-banning the specified token) and 100 (encouraging the model to use a token at every opportunity). Number 0 is neutral. Read more about it [here](https://help.openai.com/en/articles/5247780-using-logit-bias-to-alter-token-probability-with-the-openai-api).
 
 ![How to import a logit bias](https://i.imgur.com/gomeFrY.gif)
@@ -125,6 +131,7 @@ You can access all of your imported presets at any time.
 ## How To Import A Character Card?
 
 > 💡 **Tip**
+> 
 > Character cards are characters you chat or roleplay with. These don't necessarily have to be characters; they can also include assistants, narrators, and even entire worlds.
 
 ![How to import a character card](https://i.imgur.com/VULGDg2.gif)
@@ -163,12 +170,15 @@ Your character's appearance here.
 ## Top 10 Models
 
 > 📌 **Note**
+> 
 > Last updated on 19.08.2025
 
 > 💡 **Tip**
+> 
 > It's safe to assume the first model on the list is the one I'm currently using for main roleplay. Please keep in mind this is my subjective ranking, based on my own preferences.
 
 > ⚠️ **Warning**
+> 
 > **ChatGPT-4o** and **GPT-4o** are !~ two different models! ~! I know, not confusing at all. The one I recommend is `chatgpt-4o-latest` ('Latte'). The other one, GPT-4o, is pretty bad.
 
 Position | Model | Context | Censorship | Strengths | Weaknesses
@@ -186,7 +196,8 @@ Position | Model | Context | Censorship | Strengths | Weaknesses
 Extra | [NemoMix-Unleashed-12B](https://huggingface.co/MarinaraSpaghetti/NemoMix-Unleashed-12B) | 128k | None | Obligatory shill of my model, some claim it still holds up | Old and small
 
 > ⚠️ **Warning**
-> ~~I noticed some underlying issues with GPT-5. I'm barely able to control it; it feels like every time I get a generation, it's like a different model responding. Requires further testing. It may be shit, actually. It's just shit. Stick to ChatGPT-4o while you can.~~ They fixed GPT-5 at last, so I've added it to the ranking officially.
+> 
+> ~~I noticed some underlying issues with GPT-5. I'm barely able to control it; it feels like every time I get a generation, it's like a different model responding. Requires further testing. It may be awful, actually. It's just shit. Stick to ChatGPT-4o while you can.~~ They fixed GPT-5 at last, so I've added it to the ranking officially.
 
 ## Model Providers
 
