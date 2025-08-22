@@ -2,5 +2,12 @@ title: "Marinara's LLM Hub"
 description: "Guides, presets, and model recommendations"
 image: "https://i.imgur.com/4NQOuwW.jpeg"
 icon: "https://i.imgur.com/RdEhBhl.gif"
-theme: jekyll-theme-hacker
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: dark
 author: "Marinara"
+
+plugins:
+  - jekyll-include-cache
+
+include:
+  - assets/css/custom.css
