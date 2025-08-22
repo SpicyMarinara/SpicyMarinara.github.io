@@ -1,10 +1,5 @@
 # Marinara's LLM Hub
 
-!!! warning New Website
-     Moved to avoid potentially dangerous links and spam ads, new link: https://spicymarinara.github.io/
-
--> ![The Official Dottore Schizo Gooner](https://i.imgur.com/Qsszm6i.gif) <-
-
 [TOC]
 
 # Downloads
@@ -14,9 +9,6 @@
 
 !!! warning Chat Completion
      The preset below is for Chat Completion only. For my older Text Completion presets, visit my [HuggingFace](https://huggingface.co/MarinaraSpaghetti/SillyTavern-Settings).
-
-!!! danger Ads
-    Please ensure your AdBlock is enabled before accessing any links on this website, as you may be redirected to external and potentially harmful websites otherwise. The links below should take you to my **GitHub** page. You can copy-paste this link to access it: https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials
 
 [Master Download](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials.zip) | [Preset](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Preset) | [Regexes](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Regexes) | [Logit Bias](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Logit%20Bias) | [Professor Mari](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Card) | [Dottore](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials/Cards/Dottore.png) **ᴺᴱᵂ** 
 :----: | :----: | :----: | :----: | :----: | :----:
