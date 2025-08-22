@@ -1,11 +1,3 @@
----
-title: "Marinara's LLM Hub"
-description: "Guides, presets, and model recommendations"
-image: "https://i.imgur.com/4NQOuwW.jpeg"
-icon: "https://i.imgur.com/RdEhBhl.gif"
-theme: jekyll-theme-dark
----
-
 1. [Downloads](#downloads)  
 2. [About](#about)  
 3. [Lexicon](#lexicon)  
