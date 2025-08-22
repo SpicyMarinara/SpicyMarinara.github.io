@@ -9,9 +9,8 @@ plugins:
   - jekyll-include-cache
 include:
   - assets/css/custom.css
-# Remove sidebar/footer widgets
 sidebar:
-  - title: ""   # Or set to false if present
-    nav:        # Remove any references to "recent_posts"
+  - title: ""
+    nav:
 atom_feed:
   hide: true
