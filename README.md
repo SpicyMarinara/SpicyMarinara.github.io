@@ -37,7 +37,9 @@ Downloads the entire .zip file that includes the preset, regexes, logit bias, an
 
 Howdy, I'm Marinara!
 An LLM enthusiast, teacher, merger, and prompt engineer since late 2023. Additionally, an artist and coder on occasion. I'm the author of models such as [NemoMix Unleashed](https://huggingface.co/MarinaraSpaghetti/NemoMix-Unleashed-12B) and many universal prompts, including professional ones for companies like [Tolan](https://www.tolans.com/), [MyDreamCompanion](https://www.mydreamcompanion.com/), or [Toffee.ai](https://toffee.ai/). I consult for various AI services and offer commissions for cards, prompts, and artworks.
+
 Here you can find my roleplaying and creative writing presets, as well as recommendations, cards, and guides. All related to LLMs. Feel free to suggest new sections to add or models to test. I hope you'll find it informative, helpful, and fun to read.
+
 Cheers and happy gooning!
 
 # Lexicon
@@ -218,18 +220,26 @@ Hey, while you're here, perhaps you could also check out my [Discord Buddy](http
 # Support Me
 
 Enjoy what I do? Please, consider supporting me on Ko-fi! These donations help fund my models' testing and my prompt engineering endeavors!
+
 https://ko-fi.com/marinara_spaghetti
+
 Thank you!
+
 💙
 
 # Contact
 
 Discord:
-==marinara_spaghetti==
+
+marinara_spaghetti
+
 E-mail:
-==mgrabower97@gmail.com==
+
+mgrabower97@gmail.com
+
 Socials:
-==https://linktr.ee/Spicy_Marinara==
+
+https://linktr.ee/Spicy_Marinara
 
 # Fanarts
 
