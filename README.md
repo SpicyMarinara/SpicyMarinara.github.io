@@ -105,7 +105,7 @@ You can access all of your imported presets at any time.
 
 ## How To Import A Logit Bias?
 
-> [!IMPORTANT]
+> ❗**Important**
 > Logit Bias works **ONLY** with OpenAI models (GPTs). I based mine on [Avi's](https://rentry.org/avaniJB), so all credit goes to them. !~ Logit Bias is a must if you want to use OAI models. ~!
 
 > 💡 **Tip**
@@ -146,6 +146,7 @@ You can access all of your imported presets at any time.
 
 - Q: What is the best format for writing character cards?
 	- A: Plain text, though, again, everything that works, works. Personally, I've noticed the best results with well-structured descriptions in paragraphs. You can also enclose parts in respective XML tags, such as:
+
 ```
 <appearance>
 Your character's appearance here.
@@ -219,7 +220,7 @@ Hey, while you're here, perhaps you could also check out my [Discord Buddy](http
 
 Enjoy what I do? Please, consider supporting me on Ko-fi! These donations help fund my models' testing and my prompt engineering endeavors!
 
-https://ko-fi.com/marinara_spaghetti
+-> [Ko-fi](https://ko-fi.com/marinara_spaghetti) <-
 
 Thank you!
 
@@ -229,15 +230,15 @@ Thank you!
 
 Discord:
 
-marinara_spaghetti
+`marinara_spaghetti`
 
 E-mail:
 
-mgrabower97@gmail.com
+`mgrabower97@gmail.com`
 
 Socials:
 
-https://linktr.ee/Spicy_Marinara
+`https://linktr.ee/Spicy_Marinara`
 
 # Fanarts
 
