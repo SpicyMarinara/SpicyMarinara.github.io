@@ -5,9 +5,13 @@ icon: "https://i.imgur.com/RdEhBhl.gif"
 remote_theme: mmistakes/minimal-mistakes
 minimal_mistakes_skin: dark
 author: "Marinara"
-
 plugins:
   - jekyll-include-cache
-
 include:
   - assets/css/custom.css
+# Remove sidebar/footer widgets
+sidebar:
+  - title: ""   # Or set to false if present
+    nav:        # Remove any references to "recent_posts"
+atom_feed:
+  hide: true
