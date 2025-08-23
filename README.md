@@ -2,24 +2,25 @@
 
 ![The Official Dottore Schizo Gooner](https://i.imgur.com/Qsszm6i.gif)
 
-1. [Downloads](#downloads)  
-2. [About](#about)  
-3. [Lexicon](#lexicon)  
-4. [Guides](#guides)  
-   - [How To Import A Preset?](#how-to-import-a-preset)  
-   - [How To Import A Regex?](#how-to-import-a-regex)  
-   - [How To Import A Logit Bias?](#how-to-import-a-logit-bias)  
-   - [How To Import A Character Card?](#how-to-import-a-character-card)  
-5. [FAQ](#faq)  
-6. [Recommendations](#recommendations)  
-   - [Top 10 Models](#top-10-models)  
-   - [Model Providers](#model-providers)  
-   - [Preset Creators](#preset-creators)  
-   - [SillyTavern Themes](#sillytavern-themes)  
-   - [Discord Buddy](#discord-buddy)  
-7. [Support Me](#support-me)  
-8. [Contact](#contact)  
-9. [Fanarts](#fanarts)  
+1. [Downloads](#downloads)
+2. [About](#about)
+3. [Lexicon](#lexicon)
+4. [Guides](#guides)
+   - [How To Import A Preset?](#how-to-import-a-preset)
+   - [How To Import A Regex?](#how-to-import-a-regex)
+   - [How To Import A Logit Bias?](#how-to-import-a-logit-bias)
+   - [How To Import A Character Card?](#how-to-import-a-character-card)
+   - [How To Edit & Toggle Prompts?](#how-to-edit-&-toggle-prompts)
+5. [FAQ](#faq)
+6. [Recommendations](#recommendations)
+   - [Top 10 Models](#top-10-models)
+   - [Model Providers](#model-providers) 
+   - [Preset Creators](#preset-creators)
+   - [SillyTavern Themes](#sillytavern-themes)
+   - [Discord Buddy](#discord-buddy)
+7. [Support Me](#support-me)
+8. [Contact](#contact)
+9. [Fanarts](#fanarts)
 
 # Downloads
 
@@ -148,6 +149,20 @@ You can access all of your imported presets at any time.
 3. Click the Import Character From File button (the one with the little arrow pointing at paper).
 3. Select the character you want to import.
 4. Open it.
+
+## How To Edit & Toggle Prompts? **ᴺᴱᵂ**
+
+> 💡 **Tip**
+> 
+> My prompt is plug-and-play, but you may want to edit it or toggle some optional stuff.
+
+![How to edit and toggle prompts](https://i.imgur.com/jupZFMm.gif)
+
+1. Open SillyTavern.
+2. Go to the Chat Completion Presets tab by clicking the first icon from the left (sliders) at the top of the page.
+3. Slide all the way down to the Prompts section.
+4. Click on the small pencil icon on the right side of the prompt to view its contents and edit it.
+5. Click on the small toggle button on the right side of the prompt to enable/disable it.
 
 # FAQ
 
