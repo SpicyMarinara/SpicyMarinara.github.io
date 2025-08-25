@@ -26,7 +26,7 @@
 
 > 📌 **Note**
 > 
-> The newest version is 5.0.
+> The newest version is 5.5.
 
 > ⚠️ **Warning**
 > 
@@ -186,6 +186,9 @@ Your character's appearance here.
 
 - Q: Can I use AI to generate my cards/lorebooks/presets?
 	- A: Yes, though expect subpar results. The more effort you put into writing these yourself, the better the quality of output you'll get. By using synthetic data, you're encouraging models to fall into established patterns and get 'lazier'. You can always outline your ideas to the model or provide them with an example you want them to follow when generating stuff for you. Except, don't ever use AI-generated prompts; models **do not** know how to prompt themselves.
+ 
+- Q: Which Prompt Post-Processing do I use?
+	- A: Merge consecutive roles (no tools).
 
 # Recommendations
 
