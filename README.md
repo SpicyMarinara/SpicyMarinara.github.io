@@ -39,7 +39,7 @@ Link | Description
 [Regexes](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Regexes) | Regexes that clean formatting errors, remove em dashes, and unify formats
 [Logit Bias](https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Logit%20Bias) | Logit bias for OpenAI models
 [Professor Mari](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials/Cards/Professor%20Mari.png) | Professor Mari's character card, an assistant who will teach you all about LLMs and help you out with creating character cards
-[Dottore](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials/Cards/Dottore.png) **ᴺᴱᵂ** | Dottore's character card, the Second of the Eleven Fatui Harbingers from Genshin Impact
+[Dottore](https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials/Cards/Dottore.png) | Dottore's character card, the Second of the Eleven Fatui Harbingers from Genshin Impact
 
 ![How to download](https://i.imgur.com/G610Q95.png)
 
@@ -150,7 +150,7 @@ You can access all of your imported presets at any time.
 3. Select the character you want to import.
 4. Open it.
 
-## How To Edit & Toggle Prompts? **ᴺᴱᵂ**
+## How To Edit & Toggle Prompts?
 
 > 💡 **Tip**
 > 
@@ -192,11 +192,11 @@ Your character's appearance here.
 
 # Recommendations
 
-## Top 10 Models
+## Recommended Models
 
 > 📌 **Note**
 > 
-> Last updated on 19.08.2025
+> Last updated on 06.09.2025
 
 > 💡 **Tip**
 > 
@@ -208,16 +208,17 @@ Your character's appearance here.
 
 Position | Model | Context | Censorship | Strengths | Weaknesses
 :----: | :----: | :----: | :----: | :----: | :----:
-1 | [Claude Opus 4.1](https://openrouter.ai/anthropic/claude-opus-4.1) **ᴺᴱᵂ** | 200k | Low | Smartest one on the list, has a unique writing style and creativity | ~~Screw it, Opussy won, the only downside is it costs you a liver to use it.~~ Opus can't be beat. It's impossible. The writing is too good. The smarts even more so. Nothing else compares right now
-2 | [GPT-5 Chat](https://openrouter.ai/openai/gpt-5-chat) **ᴺᴱᵂ** | 128k | Low | A terrible disappointment at first, but they fixed it, especially with how good the prose feels; now it's a smarter ChatGPT-4o | As all the other OAI models, it requires regexes and a logit bias to be good, plus there's no saying whether the upgrades are temporary
+1 | [Claude Opus 4.1](https://openrouter.ai/anthropic/claude-opus-4.1)| 200k | Low | Smartest one on the list, has a unique writing style and creativity | ~~Screw it, Opussy won, the only downside is it costs you a liver to use it.~~ Opus can't be beat. It's impossible. The writing is too good. The smarts even more so. Nothing else compares right now
+2 | [GPT-5](https://openrouter.ai/openai/gpt-5) **ᴺᴱᵂ** | 400k | Low | A true endgame boss for prompters, once you figure it out, it's a real beast. Will do anything you ask it to do | Again, a nightmare to prompt, and without a good one, it simply doesn't work. Works better in higher contexts than Opus, but lacks its emotional intelligence. Also, needs high thinking to be decent
 3 | [ChatGPT-4o](https://openrouter.ai/openai/chatgpt-4o-latest) | 128k | Low | Best conversational style, big knowledge base, very smart, funny | Unusable without proper regexes and a logit bias
-4 | [Claude Sonnet 3.7](https://openrouter.ai/anthropic/claude-3.7-sonnet) | 200k | None | Excellent at both writing and roleplaying, works great on higher contexts (above 32k) | A little outdated
-5 | [Kimi K2](https://openrouter.ai/moonshotai/kimi-k2) | 65k | Low | Concise, original, novel | Not so smart and struggled at higher contexts (above 32k)
-6 | [Gemini 2.5 Pro](https://openrouter.ai/google/gemini-2.5-pro)/[Flash](https://openrouter.ai/google/gemini-2.5-flash) | 1mln | Medium | Very smart and good at instruction following | Echoing hell ("echoing?"), stiff prose with no logit bias to control some tokens' usage (prepare for a lot of "then" and "didn't"), it's a 50/50 chance the model is lobotomized on the day you use it
-7 | [DeepSeek R1](https://openrouter.ai/deepseek/deepseek-r1-0528)/[V3](https://openrouter.ai/deepseek/deepseek-chat-v3-0324) | 163k | None | Creative and wild | Hard to control and struggles with repetition
-8 | [Claude Sonnet 4](https://openrouter.ai/anthropic/claude-sonnet-4) | 200k | Low | Good style, very smart | Lacks 3.7's creative spark and is very passive
-9 | [GPT-4.1](https://openrouter.ai/openai/gpt-4.1) | 1mln | Low | Good style, doesn't have an annoyingly positive bias, has a large working context window | Unusable without proper regexes and a logit bias, somewhat lacking in smarts
-10 | [Grok 4](https://openrouter.ai/x-ai/grok-4) | 256k | None | Grok, is this true? | It's like a teenager going through puberty, so horny and not very smart
+4 | [GPT-5 Chat](https://openrouter.ai/openai/gpt-5-chat) | 128k | Low | A terrible disappointment at first, but they fixed it, especially with how good the prose feels; now it's a smarter ChatGPT-4o | As all the other OAI models, it requires regexes and a logit bias to be good, plus its prose is slightly worse than ChatGPT-4o's
+5 | [Claude Sonnet 4](https://openrouter.ai/anthropic/claude-sonnet-4) | 200k | Low | Good style, very smart | Lacks 3.7's creative spark and is very passive
+6 | [Claude Sonnet 3.7](https://openrouter.ai/anthropic/claude-3.7-sonnet) | 200k | None | Excellent at both writing and roleplaying, works great on higher contexts (above 32k) | A little outdated
+7 | [Kimi K2](https://openrouter.ai/moonshotai/kimi-k2) | 65k | Low | Concise, original, novel | Not so smart and struggled at higher contexts (above 32k)
+8 | [Gemini 2.5 Pro](https://openrouter.ai/google/gemini-2.5-pro)/[Flash](https://openrouter.ai/google/gemini-2.5-flash) | 1mln | Medium | Very smart and good at instruction following | Echoing hell ("echoing?"), stiff prose with no logit bias to control some tokens' usage (prepare for a lot of "then" and "didn't"), it's a 50/50 chance the model is lobotomized on the day you use it
+9 | [DeepSeek R1](https://openrouter.ai/deepseek/deepseek-r1-0528)/[V3](https://openrouter.ai/deepseek/deepseek-chat-v3-0324) | 163k | None | Creative and wild | Hard to control and struggles with repetition
+10 | [GPT-4.1](https://openrouter.ai/openai/gpt-4.1) | 1mln | Low | Good style, doesn't have an annoyingly positive bias, has a large working context window | Unusable without proper regexes and a logit bias, somewhat lacking in smarts
+11 | [Grok 4](https://openrouter.ai/x-ai/grok-4) | 256k | None | Grok, is this true? | It's like a teenager going through puberty, so horny and not very smart
 Extra | [NemoMix-Unleashed-12B](https://huggingface.co/MarinaraSpaghetti/NemoMix-Unleashed-12B) | 128k | None | Obligatory shill of my model, some claim it still holds up | Old and small
 
 > ⚠️ **Warning**
@@ -229,7 +230,7 @@ Extra | [NemoMix-Unleashed-12B](https://huggingface.co/MarinaraSpaghetti/NemoMix
 Provider | Description
 :----: | :----:
 [Crystal Proxy](https://crystalsraw.me/models) | Proxy of my trusted friend. For just $20 a month, you can get access to pretty much every big model out there. I highly recommend checking it out, even if it's to hang out with us on her Discord server
-[Anas Proxy](https://rentry.org/anas_proxy) **ᴺᴱᵂ** | New proxy, recommended by a friend. It offers a few models to choose from, including Opus and Sonnet with unlimited contexts. You pay either around $1 for unlimited requests per day of use, or for $2, you can buy 100 requests to use whenever you like. Tested, and everything works
+[Anas Proxy](https://rentry.org/anas_proxy) | New proxy, recommended by a friend. It offers a few models to choose from, including Opus and Sonnet with unlimited contexts. You pay either around $1 for unlimited requests per day of use, or for $2, you can buy 100 requests to use whenever you like. Tested, and everything works
 [OpenRouter](https://openrouter.ai/) | I hope this one needs no introduction. This is currently the safest and easiest way to access all the models. Pay-as-you-go when using them
 
 ## Preset Creators
@@ -240,13 +241,14 @@ Creator | Description
 [Pixi](https://pixibots.neocities.org/) | The grandparent of prompting. One of my biggest inspirations
 [Nemo Preset](https://github.com/NemoVonNirgend/NemoPresetExt) | Personally, I find this preset too big and unnecessarily bloated, but it's still a very well-written and well-thought-out preset! If large token numbers and customization options don't scare you, I suggest checking this one out
 [Celia](https://leafcanfly.neocities.org/) | Customizable, creative, overall a great prompt. Plus, Celia is cute
+[AI Presets](https://discord.gg/GxwmKtSJV2) **ᴺᴱᵂ** | Discord server containing many great prompts from amazing creators such as Loggo, Gerodot, Ashu, Chi-Bi, Nara, and others.
 
 ## SillyTavern Themes
 
 Theme | Description
 :----: | :----:
 [MoonlitEchoes](https://github.com/RivelleDays/SillyTavern-MoonlitEchoesTheme) | It's the one I'm currently using, and the one you can see on my screenshots! It's beautiful, I absolutely recommend it
-[NemoEngine](https://github.com/NemoVonNirgend/NemoPresetExt/) **ᴺᴱᵂ** | Very convenient for prompt management, allows you to play videos and streams as a background for your chats (with sound), and improves on tabs' design.
+[NemoEngine](https://github.com/NemoVonNirgend/NemoPresetExt/) | Very convenient for prompt management, allows you to play videos and streams as a background for your chats (with sound), and improves on tabs' design.
 
 ## Discord Buddy
 
@@ -281,9 +283,11 @@ Socials:
 # Fanarts
 
 <div align="center">
-  <img src="https://i.imgur.com/SjQYnZD.png" alt="Vynocchi" style="width:18%; max-width:200px;">
-  <img src="https://i.imgur.com/NbRDrCt.jpeg" alt="Huxnt3rx" style="width:18%; max-width:200px;">
-  <img src="https://i.imgur.com/cKRfHeM.png" alt="Huxnt3rx" style="width:18%; max-width:200px;">
-  <img src="https://i.imgur.com/t4vn272.png" alt="Xixica" style="width:18%; max-width:200px;">
-  <img src="https://i.imgur.com/dhGFKvc.png" alt="Xixica" style="width:18%; max-width:200px;">
+	<img src="https://i.imgur.com/p6rhYTF.gif" alt="Huxnt3rx" style="width:18%; max-width:200px;">
+	<img src="https://i.imgur.com/SjQYnZD.png" alt="Vynocchi" style="width:18%; max-width:200px;">
+	<img src="https://i.imgur.com/NbRDrCt.jpeg" alt="Huxnt3rx" style="width:18%; max-width:200px;">
+	<img src="https://i.imgur.com/cKRfHeM.png" alt="Huxnt3rx" style="width:18%; max-width:200px;">
+	<img src="https://i.imgur.com/t4vn272.png" alt="Xixica" style="width:18%; max-width:200px;">
+	<img src="https://i.imgur.com/dhGFKvc.png" alt="Xixica" style="width:18%; max-width:200px;">
+	<img src="https://i.imgur.com/OG9jwmB.gif" alt="Huxnt3rx" style="width:18%; max-width:200px;">
 </div>
