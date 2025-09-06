@@ -26,7 +26,7 @@
 
 > 📌 **Note**
 > 
-> The newest version is 5.5.
+> The newest version is 6.0.
 
 > ⚠️ **Warning**
 > 
