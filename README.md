@@ -13,8 +13,8 @@
    - [How To Edit & Toggle Prompts?](#how-to-edit-&-toggle-prompts)
 5. [FAQ](#faq)
 6. [Recommendations](#recommendations)
-   - [Top 10 Models](#top-10-models)
-   - [Model Providers](#model-providers) 
+   - [Recommended Models](#recommended-models)
+   - [Model Providers](#model-providers)
    - [Preset Creators](#preset-creators)
    - [SillyTavern Themes](#sillytavern-themes)
    - [Discord Buddy](#discord-buddy)
@@ -124,7 +124,7 @@ You can access all of your imported presets at any time.
 
 ## How To Import A Logit Bias?
 
-> ❗**Important**
+> ⚠️ **Warning**
 > 
 > Logit Bias works **ONLY** with OpenAI models (GPTs). I based mine on [Avi's](https://rentry.org/avaniJB), so all credit goes to them. <ins>Logit Bias is a must if you want to use OAI models.</ins>
 
@@ -241,6 +241,10 @@ Provider | Description
 [OpenRouter](https://openrouter.ai/) | I hope this one needs no introduction. This is currently the safest and easiest way to access all the models. Pay-as-you-go when using them
 
 ## Preset Creators
+
+> 📌 **Note**
+> 
+> If a proxy is listed here, it means I personally tested it and its owner agreed to being mentioned on this page.
 
 Creator | Description
 :----: | :----:
