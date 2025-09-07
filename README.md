@@ -290,5 +290,6 @@ Socials:
 	<img src="https://i.imgur.com/cKRfHeM.png" alt="Huxnt3rx" style="width:18%; max-width:200px;">
 	<img src="https://i.imgur.com/t4vn272.png" alt="Xixica" style="width:18%; max-width:200px;">
 	<img src="https://i.imgur.com/dhGFKvc.png" alt="Xixica" style="width:18%; max-width:200px;">
+	<img src="https://i.imgur.com/5X67Oks.jpeg" alt="s0lu" style="width:18%; max-width:200px;">
 	<img src="https://i.imgur.com/OG9jwmB.gif" alt="Huxnt3rx" style="width:18%; max-width:200px;">
 </div>
