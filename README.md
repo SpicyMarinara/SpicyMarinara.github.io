@@ -34,7 +34,7 @@
 
 > ⚠️ **Warning**
 > 
-> My presets are designed for chatting, roleplaying, and fiction writing with LLMs. Due to their uncensored nature, they are intended for adults only. <ins>By downloading the files below, you confirm that you are 18 years of age or older.</ins>
+> My presets are designed for chatting, roleplaying, and fiction writing with LLMs. Due to their uncensored nature, they are intended for adults only. <ins>By downloading the files below, you confirm that you are 18 years of age or older and acknowledge that I am not responsible for any content you create or share using these presets.</ins>
 
 Link | Description
 :----: | :----:
