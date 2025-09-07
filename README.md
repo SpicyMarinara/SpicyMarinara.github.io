@@ -28,9 +28,13 @@
 > 
 > The newest version is 6.0.
 
+> 💡 **Tip**
+>
+> The preset below is for Chat Completion only. For my older Text Completion presets, visit my [HuggingFace](https://huggingface.co/MarinaraSpaghetti/SillyTavern-Settings).
+
 > ⚠️ **Warning**
 > 
-> The preset below is for Chat Completion only. For my older Text Completion presets, visit my [HuggingFace](https://huggingface.co/MarinaraSpaghetti/SillyTavern-Settings).
+> My presets are designed for chatting, roleplaying, and fiction writing with LLMs. Due to their uncensored nature, they are intended for adults only. <ins>By downloading the files below, you confirm that you are 18 years of age or older.</ins>
 
 Link | Description
 :----: | :----:
@@ -46,6 +50,7 @@ Link | Description
 # About
 
 Howdy, I'm Marinara!
+
 An LLM enthusiast, teacher, merger, and prompt engineer since late 2023. Additionally, an artist and coder on occasion. I'm the author of models such as [NemoMix Unleashed](https://huggingface.co/MarinaraSpaghetti/NemoMix-Unleashed-12B) and many universal prompts, including professional ones for companies like [Tolan](https://www.tolans.com/), [MyDreamCompanion](https://www.mydreamcompanion.com/), or [Toffee.ai](https://toffee.ai/). I consult for various AI services and offer commissions for cards, prompts, and artworks.
 
 Here you can find my roleplaying and creative writing presets, as well as recommendations, cards, and guides. All related to LLMs. Feel free to suggest new sections to add or models to test. I hope you'll find it informative, helpful, and fun to read.
@@ -121,7 +126,7 @@ You can access all of your imported presets at any time.
 
 > ❗**Important**
 > 
-> Logit Bias works **ONLY** with OpenAI models (GPTs). I based mine on [Avi's](https://rentry.org/avaniJB), so all credit goes to them. !~ Logit Bias is a must if you want to use OAI models. ~!
+> Logit Bias works **ONLY** with OpenAI models (GPTs). I based mine on [Avi's](https://rentry.org/avaniJB), so all credit goes to them. <ins>Logit Bias is a must if you want to use OAI models.</ins>
 
 > 💡 **Tip**
 > 
@@ -196,7 +201,7 @@ Your character's appearance here.
 
 > 📌 **Note**
 > 
-> Last updated on 06.09.2025
+> Last updated on 07.09.2025
 
 > 💡 **Tip**
 > 
@@ -204,7 +209,7 @@ Your character's appearance here.
 
 > ⚠️ **Warning**
 > 
-> **ChatGPT-4o** and **GPT-4o** are !~ two different models! ~! I know, not confusing at all. The one I recommend is `chatgpt-4o-latest` ('Latte'). The other one, GPT-4o, is pretty bad.
+> **ChatGPT-4o** and **GPT-4o** are <ins>two different models!</ins> I know, not confusing at all. The one I recommend is `chatgpt-4o-latest` ('Latte'). The other one, GPT-4o, is pretty bad.
 
 Position | Model | Context | Censorship | Strengths | Weaknesses
 :----: | :----: | :----: | :----: | :----: | :----:
@@ -219,6 +224,7 @@ Position | Model | Context | Censorship | Strengths | Weaknesses
 9 | [DeepSeek R1](https://openrouter.ai/deepseek/deepseek-r1-0528)/[V3](https://openrouter.ai/deepseek/deepseek-chat-v3-0324) | 163k | None | Creative and wild | Hard to control and struggles with repetition
 10 | [GPT-4.1](https://openrouter.ai/openai/gpt-4.1) | 1mln | Low | Good style, doesn't have an annoyingly positive bias, has a large working context window | Unusable without proper regexes and a logit bias, somewhat lacking in smarts
 11 | [Grok 4](https://openrouter.ai/x-ai/grok-4) | 256k | None | Grok, is this true? | It's like a teenager going through puberty, so horny and not very smart
+12 | [DeepSeek V3.1](https://openrouter.ai/deepseek/deepseek-chat-v3.1) **ᴺᴱᵂ** | 165k | Low | It just works | Worse than V.3 and R1 in every single aspect. What were they thinking
 Extra | [NemoMix-Unleashed-12B](https://huggingface.co/MarinaraSpaghetti/NemoMix-Unleashed-12B) | 128k | None | Obligatory shill of my model, some claim it still holds up | Old and small
 
 > ⚠️ **Warning**
