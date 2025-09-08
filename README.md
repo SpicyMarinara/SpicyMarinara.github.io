@@ -233,6 +233,10 @@ Extra | [NemoMix-Unleashed-12B](https://huggingface.co/MarinaraSpaghetti/NemoMix
 
 ## Model Providers
 
+> 📌 **Note**
+> 
+> If a proxy is listed here, it means I personally tested it and its owner agreed to being mentioned on this page.
+
 Provider | Description
 :----: | :----:
 [Crystal Proxy](https://crystalsraw.me/models) | Proxy of my trusted friend. For just $20 a month, you can get access to every big model out there. I highly recommend checking it out, even if it's to hang out with us on her Discord server
@@ -241,10 +245,6 @@ Provider | Description
 [OpenRouter](https://openrouter.ai/) | I hope this one needs no introduction. This is currently the safest and easiest way to access all the models. Pay-as-you-go when using them
 
 ## Preset Creators
-
-> 📌 **Note**
-> 
-> If a proxy is listed here, it means I personally tested it and its owner agreed to being mentioned on this page.
 
 Creator | Description
 :----: | :----:
