@@ -241,7 +241,6 @@ Provider | Description
 :----: | :----:
 [Crystal Proxy](https://crystalsraw.me/models) | Proxy of my trusted friend. For just $20 a month, you can get access to every big model out there. I highly recommend checking it out, even if it's to hang out with us on her Discord server
 [Anas Proxy](https://rentry.org/anas_proxy) | Proxy recommended by a friend. It offers a few models to choose from, including Opus and Sonnet with unlimited contexts. You pay either around $1 for unlimited requests per day of use, or for $2, you can buy 100 requests to use whenever you like. Tested, and everything works
-[4risu](https://discord.gg/fvzmGt2QB9) **ᴺᴱᵂ** | A proxy I stumbled upon accidentally, but it works really well. What may be of interest to you is that they have a free tier! A premium tier costs $5 a month with access to models such as Opus. Just make sure to grab an "English" role if you don't speak Spanish
 [OpenRouter](https://openrouter.ai/) | I hope this one needs no introduction. This is currently the safest and easiest way to access all the models. Pay-as-you-go when using them
 
 ## Preset Creators
