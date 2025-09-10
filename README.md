@@ -171,6 +171,12 @@ You can access all of your imported presets at any time.
 
 # FAQ
 
+- Q: I see some parts of your prompts in {{// this format. }}{{trim}} What does it mean? Won't it confuse the models?
+	- A: This is formatting for comments on SillyTavern. Any text rendered like that won't be sent to the LLM with your request. Only you can read it. The trim part ensures no empty new lines are sent.
+
+- Q: Why are some of your prompts empty, but left enabled anyway?
+	- A: Some shared character cards include custom prompts and jailbreaks. They will be placed in those empty prompts.
+
 - Q: What preset should I use?
 	- A: Use whatever works for you. If you get too many refusals with mine, try someone else's or write your own. I can't test my prompt with every model in existence, in every possible scenario, with every possible character card.
 
@@ -241,6 +247,7 @@ Provider | Description
 :----: | :----:
 [Crystal Proxy](https://crystalsraw.me/models) | Proxy of my trusted friend. For just $20 a month, you can get access to every big model out there. I highly recommend checking it out, even if it's to hang out with us on her Discord server
 [Anas Proxy](https://rentry.org/anas_proxy) | Proxy recommended by a friend. It offers a few models to choose from, including Opus and Sonnet with unlimited contexts. You pay either around $1 for unlimited requests per day of use, or for $2, you can buy 100 requests to use whenever you like. Tested, and everything works
+[4risu](https://discord.gg/G3qVMhDZTe) **ᴺᴱᵂ** | I accidentally stumbled upon this proxy, but it proved awesome, and the owners are kind. Has a free tier and a paid tier with less downtime and more models to choose from. Just remember to grab an English role if you don't speak Spanish
 [OpenRouter](https://openrouter.ai/) | I hope this one needs no introduction. This is currently the safest and easiest way to access all the models. Pay-as-you-go when using them
 
 ## Preset Creators
