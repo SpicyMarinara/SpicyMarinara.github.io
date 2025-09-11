@@ -4,30 +4,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* Custom CSS Variables */
+/* === ROOT VARIABLES === */
 :root {
   --dottore-primary: #00e0e6;
-  --dottore-secondary: #00c7d6;
-  --dottore-accent: #33f6ff;
-  --dottore-dark: #0b0d12;
-  --dottore-darker: #070810;
-  --dottore-panel: #141820;
-  --dottore-panel-light: #1a1f2e;
-  --dottore-text: #e0e6ed;
-  --dottore-text-dim: #a0a8b5;
-  --dottore-shadow: rgba(0, 224, 230, 0.3);
-  --dottore-glow: rgba(51, 246, 255, 0.6);
-  
-  /* Synthwave Colors */
+  --dottore-secondary: #4dd5e3;
+  --dottore-accent: #87f5f9;
+  --dottore-dark: #0a0e1a;
+  --dottore-darker: #040507;
+  --dottore-panel: #1a1f2e;
+  --dottore-panel-light: #252b3f;
+  --dottore-text: #e8f4f8;
+  --dottore-text-muted: #8fa3b3;
+  --dottore-glow: rgba(0, 224, 230, 0.5);
   --synthwave-pink: #ff2d92;
   --synthwave-purple: #bd00ff;
-  --synthwave-orange: #ff6b1a;
   --synthwave-green: #39ff14;
-  --synthwave-yellow: #ffff00;
-  --synthwave-pink-glow: rgba(255, 45, 146, 0.6);
-  --synthwave-purple-glow: rgba(189, 0, 255, 0.6);
-  --synthwave-orange-glow: rgba(255, 107, 26, 0.6);
-  --synthwave-green-glow: rgba(57, 255, 20, 0.6);
-  --synthwave-yellow-glow: rgba(255, 255, 0, 0.6);
+}
+
+/* Mobile dark theme enforcement */
+@media (max-width: 768px) {
+  html {
+    background: var(--dottore-dark) !important;
+  }
+  
+  body {
+    background: var(--dottore-dark) !important;
+    color: var(--dottore-text) !important;
+  }
+  
+  .container {
+    background: var(--dottore-dark) !important;
+  }
+  
+  /* Ensure all panels maintain dark theme */
+  .tab-content, .notification-box, .tab-nav {
+    background: var(--dottore-panel) !important;
+  }
+  
+  .tab-button {
+    background: var(--dottore-panel-light) !important;
+    color: var(--dottore-text) !important;
+  }
 }
 
 /* General body */
@@ -605,15 +622,27 @@ blockquote {
 
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 768px) {
+  /* Ensure dark theme on mobile */
+  html, body {
+    background-color: var(--dottore-dark) !important;
+    color: var(--dottore-text) !important;
+  }
+  
   /* Container adjustments */
   .container {
+    background-color: var(--dottore-dark) !important;
     padding: 10px;
   }
   
-  /* Neon title responsiveness */
+  /* Neon title responsiveness - disable animation on mobile */
   .neon-text {
     font-size: 2.2rem;
     letter-spacing: 0.12em;
+    animation: none !important;
+    text-shadow: 
+      0 0 5px var(--dottore-primary),
+      0 0 10px var(--dottore-primary),
+      0 0 15px var(--dottore-primary) !important;
   }
   
   /* Header size adjustments */
@@ -696,8 +725,14 @@ blockquote {
 
 /* Extra small devices (phones in portrait) */
 @media (max-width: 480px) {
-  /* Even smaller adjustments */
+  /* Force dark theme on mobile */
+  html, body {
+    background-color: var(--dottore-dark) !important;
+    color: var(--dottore-text) !important;
+  }
+  
   .container {
+    background-color: var(--dottore-dark) !important;
     padding: 8px;
   }
   
@@ -705,16 +740,29 @@ blockquote {
     justify-content: center;
     gap: 2px;
     padding: 2px;
+    background: var(--dottore-panel-light) !important;
   }
   
   .tab-button {
     padding: 8px 10px;
     font-size: 12px;
+    background: var(--dottore-panel) !important;
+    color: var(--dottore-text) !important;
   }
   
+  /* Disable neon animation on mobile for performance */
   .neon-text {
     font-size: 1.8rem;
     letter-spacing: 0.1em;
+    animation: none !important;
+    text-shadow: 
+      0 0 5px var(--dottore-primary),
+      0 0 10px var(--dottore-primary),
+      0 0 15px var(--dottore-primary) !important;
+    background: var(--dottore-primary) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
   }
   
   .youtube-container {
