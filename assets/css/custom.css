@@ -684,15 +684,19 @@ blockquote {
 
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 768px) {
-  /* Disable all animations on mobile to prevent flashing */
-  * {
+  /* Disable problematic animations on mobile */
+  .neon-text, .tab-content {
     animation: none !important;
-    transition: none !important;
   }
   
-  /* Allow only safe transitions */
-  .ko-fi-button {
-    transition: opacity 0.3s ease !important;
+  /* Allow safe transitions */
+  .ko-fi-button, .social-link, .tab-nav button {
+    transition: all 0.3s ease !important;
+  }
+  
+  /* Disable notification box animations */
+  .notification-box {
+    animation: none !important;
   }
   
   /* Ensure dark theme on mobile */
@@ -799,12 +803,16 @@ blockquote {
     font-size: 0.9rem;
   }
   
-  /* Tab content mobile padding - prevent flashing */
+  /* Tab content mobile padding */
   .tab-content {
     padding: 1rem;
     animation: none !important;
-    transition: none !important;
+    transition: opacity 0.2s ease !important;
     background-color: transparent !important;
+  }
+  
+  .tab-content.active {
+    opacity: 1 !important;
   }
   
   .tab-content > div {
@@ -818,14 +826,17 @@ blockquote {
   .tab-content p {
     margin-bottom: 1rem !important;
     text-align: left !important;
-    line-height: 1.5 !important;
+    line-height: 1.6 !important;
     word-spacing: normal !important;
     white-space: normal !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: none !important;
   }
   
   .tab-content p a {
     display: inline !important;
-    white-space: normal !important;
+    white-space: nowrap !important;
     word-break: keep-all !important;
   }
   
@@ -931,25 +942,31 @@ blockquote {
     font-size: 0.75rem !important;
   }
   
-  /* Mobile tab fixes - prevent flashing */
-  .tab {
+  /* Mobile tab fixes - allow safe animations */
+  .tab-nav button {
     animation: none !important;
-    transition: none !important;
+    transition: all 0.3s ease !important;
   }
   
-  .tab.active {
-    animation: none !important;
-    transition: none !important;
-    box-shadow: 0 2px 8px rgba(0, 224, 230, 0.3) !important;
+  .tab-nav button.active {
+    background: linear-gradient(45deg, var(--dottore-primary), var(--synthwave-pink)) !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(0, 224, 230, 0.4), 0 0 15px rgba(255, 45, 146, 0.3) !important;
+    transform: translateY(-1px) !important;
   }
   
-  /* Ko-fi button mobile - match social links size */
+  .tab-nav button:hover:not(.active) {
+    background: rgba(0, 224, 230, 0.1) !important;
+    transform: translateY(-1px) !important;
+  }
+  
+  /* Ko-fi button mobile - smaller size */
   .ko-fi-button {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    padding: 0.75rem 1.5rem !important;
-    font-size: 1rem !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
     animation: none !important;
     transition: opacity 0.3s ease !important;
     width: auto !important;
@@ -957,20 +974,20 @@ blockquote {
   }
   
   .ko-fi-button i {
-    margin-right: 8px !important;
+    margin-right: 6px !important;
   }
   
   /* Footer mobile adjustments */
   footer {
-    padding: 2rem 1rem !important;
+    padding: 1.5rem 1rem !important;
   }
   
   .social-link {
-    padding: 0.75rem 1.5rem !important;
-    font-size: 1rem !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
     flex: 0 1 auto !important;
     justify-content: center !important;
-    min-width: 120px !important;
+    min-width: 100px !important;
   }
   
   /* Button mobile adjustments */
