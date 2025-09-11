@@ -953,18 +953,19 @@ blockquote {
     font-size: 0.75rem !important;
   }
   
-  /* Mobile tab fixes - completely static styles */
+  /* Mobile tab fixes - static styles with active highlight */
   .tab-nav button {
     animation: none !important;
     transition: none !important;
     background: rgba(0, 224, 230, 0.05) !important;
     border: 1px solid rgba(0, 224, 230, 0.2) !important;
+    color: var(--dottore-text) !important;
   }
   
   .tab-nav button.active {
     background: var(--dottore-primary) !important;
     color: white !important;
-    box-shadow: none !important;
+    box-shadow: 0 0 0 2px rgba(0, 224, 230, 0.4) !important;
     transform: none !important;
     border: 1px solid var(--dottore-primary) !important;
   }
@@ -978,6 +979,7 @@ blockquote {
   .tab-nav button.active:hover {
     background: var(--dottore-primary) !important;
     border: 1px solid var(--dottore-primary) !important;
+    box-shadow: 0 0 0 2px rgba(0, 224, 230, 0.4) !important;
   }
   
 
