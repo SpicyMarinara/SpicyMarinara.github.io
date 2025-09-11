@@ -261,14 +261,78 @@ pre, code {
 }
 
 /* === NOTIFICATION BOXES === */
+/* Neon title animation */
+.neon-title {
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+  padding: 1rem;
+}
+
+.neon-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--dottore-primary);
+  text-shadow: 
+    0 0 5px var(--dottore-primary),
+    0 0 10px var(--dottore-primary),
+    0 0 15px var(--dottore-primary),
+    0 0 20px var(--synthwave-pink),
+    0 0 35px var(--synthwave-pink),
+    0 0 40px var(--synthwave-pink);
+  animation: neonFlicker 2s ease-in-out infinite alternate;
+  background: linear-gradient(
+    45deg,
+    var(--dottore-primary),
+    var(--synthwave-pink),
+    var(--synthwave-purple),
+    var(--dottore-primary)
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: neonFlicker 2s ease-in-out infinite alternate, gradientShift 4s ease-in-out infinite;
+}
+
+@keyframes neonFlicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 
+      0 0 5px var(--dottore-primary),
+      0 0 10px var(--dottore-primary),
+      0 0 15px var(--dottore-primary),
+      0 0 20px var(--synthwave-pink),
+      0 0 35px var(--synthwave-pink),
+      0 0 40px var(--synthwave-pink);
+    filter: brightness(1);
+  }
+  20%, 24%, 55% {
+    text-shadow: 
+      0 0 2px var(--dottore-primary),
+      0 0 5px var(--dottore-primary),
+      0 0 8px var(--dottore-primary),
+      0 0 12px var(--synthwave-pink),
+      0 0 18px var(--synthwave-pink);
+    filter: brightness(0.8);
+  }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Notification boxes */
 .notification-box {
   margin: 1.5rem 0;
-  padding: 1.5rem;
-  border-radius: 12px;
+  padding: 1rem;
+  border-radius: 8px;
   border-left: 4px solid;
   position: relative;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  background: var(--dottore-panel);
 }
 
 .notification-box::before {
@@ -429,6 +493,12 @@ blockquote {
     padding: 10px;
   }
   
+  /* Neon title responsiveness */
+  .neon-text {
+    font-size: 2.2rem;
+    letter-spacing: 0.12em;
+  }
+  
   /* Header size adjustments */
   h1 {
     font-size: 1.8rem;
@@ -523,6 +593,11 @@ blockquote {
   .tab-button {
     padding: 8px 10px;
     font-size: 12px;
+  }
+  
+  .neon-text {
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
   }
   
   h1 {
