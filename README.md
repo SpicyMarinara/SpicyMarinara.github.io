@@ -708,11 +708,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <a href="https://github.com/SpicyMarinara" target="_blank" rel="noopener" class="social-link">
       <span style="font-size: 1.2rem;">🐙</span> GitHub
     </a>
-    <a href="https://x.com/Spicy_Marinara_" target="_blank" rel="noopener" class="social-link">
-      <span style="font-size: 1.2rem;">🐦</span> Twitter
-    </a>
     <a href="https://huggingface.co/MarinaraSpaghetti" target="_blank" rel="noopener" class="social-link">
       <span style="font-size: 1.2rem;">🤗</span> Hugging Face
+    </a>
+    <a href="https://x.com/Spicy_Marinara_" target="_blank" rel="noopener" class="social-link">
+      <span style="font-size: 1.2rem;">🐦</span> Twitter
     </a>
   </div>
 

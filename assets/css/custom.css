@@ -606,6 +606,7 @@ th {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 /* Table layout fixes */
