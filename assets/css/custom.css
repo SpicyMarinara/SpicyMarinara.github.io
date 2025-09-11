@@ -147,6 +147,41 @@ code {
   color: var(--dottore-text-muted);
 }
 
+/* Ko-fi button styling */
+.kofi-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #ff5e5b, #ff9500);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 94, 91, 0.4);
+  border: 2px solid transparent;
+  margin: 1rem 0;
+}
+
+.kofi-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 94, 91, 0.6);
+  border-color: var(--dottore-primary);
+  color: white;
+  text-decoration: none;
+}
+
+.kofi-button:before {
+  content: '☕';
+  margin-right: 8px;
+  font-size: 1.3rem;
+}
+
+.kofi-button:active {
+  transform: translateY(0px);
+}
+
 /* Buttons with enhanced styling */
 .btn, button {
   background: linear-gradient(135deg, var(--dottore-secondary), var(--synthwave-purple)) !important;
@@ -769,6 +804,11 @@ blockquote {
     margin: 1rem 0;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .kofi-button {
+    padding: 10px 18px;
+    font-size: 1rem;
   }
   
   h1 {

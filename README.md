@@ -645,7 +645,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     <p>Enjoy what I do? Please, consider supporting me on Ko-fi! These donations help fund my models' testing and my prompt engineering endeavors!</p>
 
-    <p><a href="https://ko-fi.com/marinara_spaghetti">Ko-fi</a></p>
+    <div style="text-align: center; margin: 2rem 0;">
+      <a href="https://ko-fi.com/marinara_spaghetti" class="kofi-button" target="_blank">Support me on Ko-fi</a>
+    </div>
 
     <p>Thank you!</p>
 
