@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="notification-box note">
       <div class="notification-title">Note</div>
-      <div class="notification-content">The newest version is 6.0.</div>
+      <div class="notification-content">The newest version is 6.0. These presets are designed for <strong>SillyTavern</strong>.</div>
     </div>
 
     <div class="notification-box tip">
@@ -376,6 +376,11 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="notification-title">Q: Which Prompt Post-Processing do I use?</div>
       <div class="notification-content">A: Merge consecutive roles (no tools).</div>
     </div>
+
+    <div class="notification-box note">
+      <div class="notification-title">Q: Which frontend do you use?</div>
+      <div class="notification-content">A: SillyTavern.</div>
+    </div>
   </div>
 
   <div id="recommendations" class="tab-content">
@@ -646,14 +651,38 @@ document.addEventListener('DOMContentLoaded', function() {
     <h1>Fanarts</h1>
     
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0;">
-      <img src="https://i.imgur.com/p6rhYTF.gif" alt="Huxnt3rx" style="width: 100%; border-radius: 8px;">
-      <img src="https://i.imgur.com/SjQYnZD.png" alt="Vynocchi" style="width: 100%; border-radius: 8px;">
-      <img src="https://i.imgur.com/NbRDrCt.jpeg" alt="Huxnt3rx" style="width: 100%; border-radius: 8px;">
-      <img src="https://i.imgur.com/cKRfHeM.png" alt="Huxnt3rx" style="width: 100%; border-radius: 8px;">
-      <img src="https://i.imgur.com/t4vn272.png" alt="Xixica" style="width: 100%; border-radius: 8px;">
-      <img src="https://i.imgur.com/dhGFKvc.png" alt="Xixica" style="width: 100%; border-radius: 8px;">
-      <img src="https://i.imgur.com/5X67Oks.jpeg" alt="s0lu" style="width: 100%; border-radius: 8px;">
-      <img src="https://i.imgur.com/OG9jwmB.gif" alt="Huxnt3rx" style="width: 100%; border-radius: 8px;">
+      <div class="fanart-container">
+        <img src="https://i.imgur.com/p6rhYTF.gif" alt="Huxnt3rx" style="border-radius: 8px;">
+        <div class="fanart-artist">Huxnt3rx</div>
+      </div>
+      <div class="fanart-container">
+        <img src="https://i.imgur.com/SjQYnZD.png" alt="Vynocchi" style="border-radius: 8px;">
+        <div class="fanart-artist">Vynocchi</div>
+      </div>
+      <div class="fanart-container">
+        <img src="https://i.imgur.com/NbRDrCt.jpeg" alt="Huxnt3rx" style="border-radius: 8px;">
+        <div class="fanart-artist">Huxnt3rx</div>
+      </div>
+      <div class="fanart-container">
+        <img src="https://i.imgur.com/cKRfHeM.png" alt="Huxnt3rx" style="border-radius: 8px;">
+        <div class="fanart-artist">Huxnt3rx</div>
+      </div>
+      <div class="fanart-container">
+        <img src="https://i.imgur.com/t4vn272.png" alt="Xixica" style="border-radius: 8px;">
+        <div class="fanart-artist">Xixica</div>
+      </div>
+      <div class="fanart-container">
+        <img src="https://i.imgur.com/dhGFKvc.png" alt="Xixica" style="border-radius: 8px;">
+        <div class="fanart-artist">Xixica</div>
+      </div>
+      <div class="fanart-container">
+        <img src="https://i.imgur.com/5X67Oks.jpeg" alt="s0lu" style="border-radius: 8px;">
+        <div class="fanart-artist">s0lu</div>
+      </div>
+      <div class="fanart-container">
+        <img src="https://i.imgur.com/OG9jwmB.gif" alt="Huxnt3rx" style="border-radius: 8px;">
+        <div class="fanart-artist">Huxnt3rx</div>
+      </div>
     </div>
   </div>
 
