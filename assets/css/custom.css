@@ -1,65 +1,655 @@
-/* === Il Dottore / Fatui Custom Theme === */
+/* === Il Dottore's Laboratory - Enhanced Theme === */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Custom CSS Variables */
+:root {
+  --dottore-primary: #00e0e6;
+  --dottore-secondary: #00c7d6;
+  --dottore-accent: #33f6ff;
+  --dottore-dark: #0b0d12;
+  --dottore-darker: #070810;
+  --dottore-panel: #141820;
+  --dottore-panel-light: #1a1f2e;
+  --dottore-text: #e0e6ed;
+  --dottore-text-dim: #a0a8b5;
+  --dottore-shadow: rgba(0, 224, 230, 0.3);
+  --dottore-glow: rgba(51, 246, 255, 0.6);
+  
+  /* Synthwave Colors */
+  --synthwave-pink: #ff2d92;
+  --synthwave-purple: #bd00ff;
+  --synthwave-orange: #ff6b1a;
+  --synthwave-green: #39ff14;
+  --synthwave-yellow: #ffff00;
+  --synthwave-pink-glow: rgba(255, 45, 146, 0.6);
+  --synthwave-purple-glow: rgba(189, 0, 255, 0.6);
+  --synthwave-orange-glow: rgba(255, 107, 26, 0.6);
+  --synthwave-green-glow: rgba(57, 255, 20, 0.6);
+  --synthwave-yellow-glow: rgba(255, 255, 0, 0.6);
+}
 
 /* General body */
 body {
-  background-color: #0b0d12 !important; /* near black, like midnight lab */
-  color: #e0e6ed !important; /* pale steel-grey text */
-  font-family: "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, var(--dottore-dark) 0%, var(--dottore-darker) 50%, #0a0b14 100%) !important;
+  color: var(--dottore-text) !important;
+  font-family: 'Inter', "Segoe UI", Roboto, sans-serif !important;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-/* Headers */
+/* Synthwave grid overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(90deg, transparent 24%, rgba(0, 224, 230, 0.03) 25%, rgba(0, 224, 230, 0.03) 26%, transparent 27%, transparent 74%, rgba(0, 224, 230, 0.03) 75%, rgba(0, 224, 230, 0.03) 76%, transparent 77%, transparent),
+    linear-gradient(transparent 24%, rgba(0, 224, 230, 0.03) 25%, rgba(0, 224, 230, 0.03) 26%, transparent 27%, transparent 74%, rgba(0, 224, 230, 0.03) 75%, rgba(0, 224, 230, 0.03) 76%, transparent 77%, transparent);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Enhanced container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Headers with enhanced glow */
 h1, h2, h3, h4, h5, h6 {
-  color: #00e0e6 !important; /* Dottore cyan highlight */
-  text-shadow: 0 0 6px rgba(0, 224, 230, 0.3);
+  color: var(--dottore-primary) !important;
+  text-shadow: 0 0 12px var(--dottore-shadow), 0 0 24px var(--dottore-shadow);
   letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
-/* Links */
+h1 {
+  font-size: 2.5rem;
+  border-bottom: 2px solid var(--dottore-primary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Links with smooth transitions */
 a {
-  color: #00c7d6 !important; /* cyan link */
-  transition: color 0.3s ease;
+  color: var(--dottore-secondary) !important;
+  transition: all 0.3s ease;
+  text-decoration: none;
 }
 a:hover {
-  color: #33f6ff !important; /* brighter cyan on hover */
-  text-shadow: 0 0 8px rgba(51, 246, 255, 0.6);
+  color: var(--dottore-accent) !important;
+  text-shadow: 0 0 8px var(--dottore-glow);
+  text-decoration: underline;
 }
 
-/* Code blocks */
+/* Enhanced code blocks */
 pre, code {
-  background-color: #141820 !important; /* darker panel */
-  color: #e0e6ed !important;
-  border-left: 3px solid #00e0e6;
-  padding: 8px 12px;
-  border-radius: 6px;
+  background-color: var(--dottore-panel) !important;
+  color: var(--dottore-text) !important;
+  border-left: 3px solid var(--dottore-primary);
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Buttons (like "Read More") */
+/* Buttons with enhanced styling */
 .btn, button {
-  background-color: #00c7d6 !important;
-  color: #0b0d12 !important;
-  border-radius: 6px;
+  background: linear-gradient(135deg, var(--dottore-secondary), var(--synthwave-purple)) !important;
+  color: var(--dottore-dark) !important;
+  border-radius: 8px;
   border: none;
-}
-.btn:hover, button:hover {
-  background-color: #33f6ff !important;
-  color: #000 !important;
+  padding: 12px 24px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 
+    0 4px 12px rgba(0, 224, 230, 0.2),
+    0 0 20px var(--synthwave-purple-glow);
+  position: relative;
+  overflow: hidden;
 }
 
-/* Navigation bar */
+.btn::before, button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn:hover, button:hover {
+  background: linear-gradient(135deg, var(--synthwave-pink), var(--dottore-primary)) !important;
+  color: var(--dottore-darker) !important;
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 20px var(--synthwave-pink-glow),
+    0 0 30px var(--dottore-glow);
+}
+
+.btn:hover::before, button:hover::before {
+  left: 100%;
+}
+
+/* Navigation enhancements */
 .site-nav, .greedy-nav {
-  background: #0b0d12 !important;
-  border-bottom: 1px solid #00e0e6;
+  background: var(--dottore-panel) !important;
+  border-bottom: 2px solid var(--dottore-primary);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 .site-nav a {
-  color: #e0e6ed !important;
+  color: var(--dottore-text) !important;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
 }
 .site-nav a:hover {
-  color: #33f6ff !important;
+  color: var(--dottore-accent) !important;
+  background-color: rgba(0, 224, 230, 0.1);
 }
 
-/* Footer */
+/* Footer styling */
 .page__footer {
-  background: #0b0d12 !important;
-  color: #777 !important;
-  border-top: 1px solid #00e0e6;
+  background: var(--dottore-panel) !important;
+  color: var(--dottore-text-dim) !important;
+  border-top: 2px solid var(--dottore-primary);
+}
+
+/* === TAB SYSTEM === */
+.tab-container {
+  margin: 2rem 0;
+  background: var(--dottore-panel);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.tab-nav {
+  display: flex;
+  background: var(--dottore-panel-light);
+  border-bottom: 2px solid var(--dottore-primary);
+  overflow-x: auto;
+}
+
+.tab-nav button {
+  background: transparent !important;
+  color: var(--dottore-text-dim) !important;
+  border: none !important;
+  padding: 16px 24px !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  white-space: nowrap;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.tab-nav button:hover {
+  background: rgba(0, 224, 230, 0.1) !important;
+  color: var(--dottore-accent) !important;
+  transform: none !important;
+}
+
+.tab-nav button.active {
+  background: linear-gradient(135deg, var(--dottore-primary), var(--synthwave-purple)) !important;
+  color: var(--dottore-dark) !important;
+  box-shadow: 
+    0 4px 12px var(--dottore-shadow),
+    0 0 20px var(--synthwave-purple-glow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  position: relative;
+}
+
+.tab-nav button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--synthwave-pink), var(--dottore-primary), var(--synthwave-purple));
+  border-radius: 2px;
+}
+
+.tab-content {
+  display: none;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === NOTIFICATION BOXES === */
+.notification-box {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid;
+  position: relative;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.notification-box::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.notification-box.note {
+  background: linear-gradient(135deg, rgba(0, 224, 230, 0.15), rgba(51, 246, 255, 0.1));
+  border-left-color: var(--dottore-primary);
+  color: var(--dottore-text);
+  box-shadow: 0 8px 32px rgba(0, 224, 230, 0.2), inset 0 1px 0 rgba(0, 224, 230, 0.3);
+}
+
+.notification-box.note::before {
+  background: linear-gradient(45deg, var(--dottore-primary), var(--dottore-accent));
+  content: "📌";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: 0 0 15px var(--dottore-glow);
+}
+
+.notification-box.tip {
+  background: linear-gradient(135deg, rgba(57, 255, 20, 0.15), rgba(0, 224, 230, 0.1));
+  border-left-color: var(--synthwave-green);
+  color: var(--dottore-text);
+  box-shadow: 0 8px 32px var(--synthwave-green-glow), inset 0 1px 0 rgba(57, 255, 20, 0.3);
+}
+
+.notification-box.tip::before {
+  background: linear-gradient(45deg, var(--synthwave-green), #7fff39);
+  content: "💡";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: 0 0 15px var(--synthwave-green-glow);
+}
+
+.notification-box.warning {
+  background: linear-gradient(135deg, rgba(255, 45, 146, 0.15), rgba(189, 0, 255, 0.1));
+  border-left-color: var(--synthwave-pink);
+  color: var(--dottore-text);
+  box-shadow: 0 8px 32px var(--synthwave-pink-glow), inset 0 1px 0 rgba(255, 45, 146, 0.3);
+}
+
+.notification-box.warning::before {
+  background: linear-gradient(45deg, var(--synthwave-pink), var(--synthwave-purple));
+  content: "⚠️";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: 0 0 15px var(--synthwave-pink-glow);
+}
+
+.notification-box .notification-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding-left: 2.5rem;
+  color: inherit;
+}
+
+.notification-box .notification-content {
+  padding-left: 2.5rem;
+  margin: 0;
+}
+
+/* === TABLE ENHANCEMENTS === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: var(--dottore-panel);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 224, 230, 0.2);
+}
+
+th {
+  background: var(--dottore-panel-light);
+  color: var(--dottore-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+
+tr:hover {
+  background: rgba(0, 224, 230, 0.05);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* === IMAGE ENHANCEMENTS === */
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* === SCROLLBAR STYLING === */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dottore-darker);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--dottore-primary), var(--synthwave-purple));
+  border-radius: 4px;
+  box-shadow: 0 0 10px var(--synthwave-purple-glow);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--synthwave-pink), var(--dottore-accent));
+  box-shadow: 0 0 15px var(--synthwave-pink-glow);
+}
+
+/* === BLOCKQUOTE STYLING === */
+blockquote {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: var(--dottore-panel);
+  border-left: 4px solid var(--dottore-primary);
+  border-radius: 8px;
+  font-style: italic;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .tab-nav {
+    flex-direction: column;
+  }
+  
+  .tab-nav button {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .tab-content {
+    padding: 1rem;
+  }
+  
+  .notification-box {
+    padding: 1rem;
+  }
+  
+  .notification-box .notification-title,
+  .notification-box .notification-content {
+    padding-left: 2rem;
+  }
+}
+
+/* === ADDITIONAL ENHANCEMENTS === */
+
+/* Main container styling */
+.markdown-body {
+  background: transparent !important;
+}
+
+/* Enhanced glow effects for headers */
+h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--dottore-primary), var(--synthwave-pink), transparent);
+  margin-top: 0.5rem;
+  border-radius: 2px;
+  box-shadow: 0 0 10px var(--synthwave-pink-glow);
+}
+
+h2 {
+  position: relative;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--synthwave-purple), var(--dottore-primary));
+  border-radius: 2px;
+  box-shadow: 0 0 8px var(--synthwave-purple-glow);
+}
+
+/* Hover effects for tables */
+table tr:hover {
+  background: linear-gradient(90deg, rgba(0, 224, 230, 0.08), rgba(255, 45, 146, 0.05)) !important;
+  transform: translateX(4px);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 45, 146, 0.2);
+}
+
+/* Enhanced notification box animations */
+.notification-box {
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.notification-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.8s ease;
+}
+
+.notification-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.notification-box:hover::after {
+  left: 100%;
+}
+
+/* Loading animation for tab switching */
+.tab-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.tab-content.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhanced button hover effects */
+.tab-nav button:not(.active):hover {
+  background: linear-gradient(135deg, rgba(0, 224, 230, 0.15), rgba(51, 246, 255, 0.15)) !important;
+  box-shadow: inset 0 0 20px rgba(0, 224, 230, 0.2) !important;
+}
+
+/* Custom link animations */
+a:not(.tab-link) {
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+a:not(.tab-link)::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background: linear-gradient(90deg, var(--dottore-accent), var(--synthwave-pink));
+  transition: width 0.3s ease;
+  box-shadow: 0 0 8px var(--synthwave-pink-glow);
+}
+
+a:not(.tab-link):hover::after {
+  width: 100%;
+}
+
+a:not(.tab-link):hover {
+  text-shadow: 0 0 8px var(--synthwave-pink-glow);
+}
+
+/* Improved list styling */
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--dottore-text);
+}
+
+ul li::before {
+  content: '▸';
+  color: var(--synthwave-green);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  text-shadow: 0 0 8px var(--synthwave-green-glow);
+}
+
+ol {
+  counter-reset: item;
+}
+
+ol li {
+  counter-increment: item;
+}
+
+ol li::before {
+  content: counter(item) '.';
+  color: var(--synthwave-pink);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  text-shadow: 0 0 8px var(--synthwave-pink-glow);
+}
+
+/* Enhanced image gallery */
+#fanarts .tab-content div {
+  gap: 1.5rem !important;
+}
+
+#fanarts img {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+#fanarts img:hover {
+  transform: scale(1.05);
+  border-color: var(--synthwave-pink);
+  box-shadow: 
+    0 8px 32px var(--synthwave-pink-glow),
+    0 0 20px var(--dottore-glow);
+}
+
+#fanarts img:nth-child(even):hover {
+  border-color: var(--synthwave-purple);
+  box-shadow: 
+    0 8px 32px var(--synthwave-purple-glow),
+    0 0 20px var(--dottore-glow);
+}
+
+#fanarts img:nth-child(3n):hover {
+  border-color: var(--synthwave-green);
+  box-shadow: 
+    0 8px 32px var(--synthwave-green-glow),
+    0 0 20px var(--dottore-glow);
+}
+
+/* === SYNTHWAVE KEYFRAME ANIMATIONS === */
+@keyframes synthwave-pulse {
+  0%, 100% { 
+    box-shadow: 0 0 5px var(--dottore-primary);
+  }
+  25% { 
+    box-shadow: 0 0 15px var(--synthwave-pink-glow);
+  }
+  50% { 
+    box-shadow: 0 0 20px var(--synthwave-purple-glow);
+  }
+  75% { 
+    box-shadow: 0 0 15px var(--synthwave-green-glow);
+  }
+}
+
+@keyframes neon-flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+/* Apply synthwave effects to special elements */
+.tab-container {
+  animation: synthwave-pulse 4s ease-in-out infinite;
+}
+
+h1 {
+  animation: neon-flicker 3s ease-in-out infinite;
+}
+
+/* Synthwave hover effect for tab navigation */
+.tab-nav button:not(.active):hover {
+  background: linear-gradient(135deg, rgba(255, 45, 146, 0.15), rgba(189, 0, 255, 0.15)) !important;
+  box-shadow: 
+    inset 0 0 20px rgba(255, 45, 146, 0.2),
+    0 0 15px var(--synthwave-pink-glow) !important;
+  color: var(--synthwave-pink) !important;
 }
