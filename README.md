@@ -685,12 +685,12 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="fanart-artist">s0lu</div>
       </div>
       <div class="fanart-container">
-        <img src="https://i.imgur.com/OG9jwmB.gif" alt="Huxnt3rx" style="border-radius: 8px;">
-        <div class="fanart-artist">Huxnt3rx</div>
-      </div>
-      <div class="fanart-container">
         <img src="https://i.imgur.com/6dEFpqW.png" alt="Vynocchi" style="border-radius: 8px;">
         <div class="fanart-artist">Vynocchi</div>
+      </div>
+	  <div class="fanart-container">
+        <img src="https://i.imgur.com/OG9jwmB.gif" alt="Huxnt3rx" style="border-radius: 8px;">
+        <div class="fanart-artist">Huxnt3rx</div>
       </div>
     </div>
   </div>
