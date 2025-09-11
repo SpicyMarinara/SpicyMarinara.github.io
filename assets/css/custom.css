@@ -147,21 +147,44 @@ code {
   color: var(--dottore-text-muted);
 }
 
-/* Ko-fi button styling */
-.kofi-button {
+/* Ko-fi Button Styling */
+.ko-fi-button {
+  display: inline-block;
+  background: linear-gradient(45deg, #ff5e5b, #ff9500);
+  color: white !important;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(255, 94, 91, 0.3);
+}
+
+/* Social Media Links */
+.social-link {
   display: inline-flex;
   align-items: center;
-  padding: 12px 24px;
-  background: linear-gradient(135deg, #ff5e5b, #ff9500);
-  color: white;
+  gap: 0.5rem;
+  color: var(--dottore-text) !important;
   text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  background: rgba(0, 224, 230, 0.1);
+  border: 1px solid rgba(0, 224, 230, 0.3);
   border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 94, 91, 0.4);
-  border: 2px solid transparent;
-  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.social-link:hover {
+  background: rgba(0, 224, 230, 0.2);
+  border-color: var(--dottore-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 224, 230, 0.2);
+  color: var(--dottore-primary) !important;
 }
 
 .kofi-button:hover {
@@ -879,6 +902,7 @@ blockquote {
   /* Ko-fi button mobile */
   .ko-fi-button {
     width: 100% !important;
+    max-width: 300px !important;
     padding: 12px !important;
     font-size: 1rem !important;
     animation: none !important;
@@ -887,6 +911,18 @@ blockquote {
   
   .ko-fi-button i {
     margin-right: 8px !important;
+  }
+  
+  /* Footer mobile adjustments */
+  footer {
+    padding: 2rem 1rem !important;
+  }
+  
+  .social-link {
+    padding: 0.6rem 1rem !important;
+    font-size: 0.9rem !important;
+    flex: 1 1 auto !important;
+    justify-content: center !important;
   }
   
   /* Button mobile adjustments */

@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     <button class="tab-link" onclick="showTab(event, 'faq')">FAQ</button>
     <button class="tab-link" onclick="showTab(event, 'recommendations')">Recommendations</button>
     <button class="tab-link" onclick="showTab(event, 'contact')">Contact</button>
-    <button class="tab-link" onclick="showTab(event, 'support')">Support</button>
     <button class="tab-link" onclick="showTab(event, 'fanarts')">Fanarts</button>
   </div>
 
@@ -637,21 +636,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <p>Hey, while you're here, perhaps you could also check out my <a href="https://github.com/SpicyMarinara/Discord-Buddy">Discord Buddy</a> project? It's an LLM-powered Discord bot you can host. Open-source, free, with many, many great features. Check it out!</p>
 
-    <img src="https://camo.githubusercontent.com/e0a197fb672dc840d4b9e1a13887855ec3fff93a3bc820dc9afef0e0fe549153/68747470733a2f2f692e696d6775722e636f6d2f4d5a47776937632e6a706567" alt="Sevequiem" style="max-width: 100%; height: auto;">
-  </div>
-
-  <div id="support" class="tab-content">
-    <h1>Support Me</h1>
-    
-    <p>Enjoy what I do? Please, consider supporting me on Ko-fi! These donations help fund my models' testing and my prompt engineering endeavors!</p>
-
-    <div style="text-align: center; margin: 2rem 0;">
-      <a href="https://ko-fi.com/marinara_spaghetti" class="kofi-button" target="_blank">Support me on Ko-fi</a>
-    </div>
-
-    <p>Thank you!</p>
-
-    <p>💙</p>
+    <img src="https://camo.githubusercontent.com/e0a197fb672dc840d4b9e1a13887855ec3fff93a3bc820dc9afef0e0fe549153/68747470733a2f2f692e696d6775722e636f6d2f4d5a47776937632e6a706567" alt="Sevequiem" style="max-width: 60%; height: auto; display: block; margin: 1rem auto;">
   </div>
 
   <div id="contact" class="tab-content">
@@ -707,3 +692,32 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 
 </div>
+
+<!-- Footer -->
+<footer style="margin-top: 4rem; padding: 3rem 0 2rem 0; border-top: 2px solid var(--dottore-primary); background: linear-gradient(135deg, var(--dottore-dark) 0%, rgba(0, 224, 230, 0.05) 100%); text-align: center;">
+  
+  <!-- Ko-fi Support Button -->
+  <div style="margin-bottom: 2rem;">
+    <p style="color: var(--dottore-text); margin-bottom: 1rem; font-size: 1.1rem;">💙 Enjoy what I do? Support my work!</p>
+    <a href="https://ko-fi.com/marinara_spaghetti" class="ko-fi-button" target="_blank" rel="noopener">
+      ☕ Support me on Ko-fi
+    </a>
+  </div>
+
+  <!-- Social Media Links -->
+  <div style="margin: 2rem 0; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+    <a href="https://x.com/Spicy_Marinara_" target="_blank" rel="noopener" class="social-link">
+      <span style="font-size: 1.2rem;">🐦</span> Twitter
+    </a>
+    <a href="https://huggingface.co/MarinaraSpaghetti" target="_blank" rel="noopener" class="social-link">
+      <span style="font-size: 1.2rem;">🤗</span> Hugging Face
+    </a>
+  </div>
+
+  <!-- Copyright and Credits -->
+  <div style="border-top: 1px solid rgba(0, 224, 230, 0.2); padding-top: 1.5rem; color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">
+    <p>© @MarinaraSpaghetti 2025</p>
+    <p style="margin-top: 0.5rem;">✨ Created with the help of <strong style="color: var(--dottore-primary);">Claude Sonnet 3.5</strong></p>
+  </div>
+
+</footer>
