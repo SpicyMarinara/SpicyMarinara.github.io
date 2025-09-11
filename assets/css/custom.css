@@ -657,6 +657,17 @@ blockquote {
 
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 768px) {
+  /* Disable all animations on mobile to prevent flashing */
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  /* Allow only safe transitions */
+  .ko-fi-button {
+    transition: opacity 0.3s ease !important;
+  }
+  
   /* Ensure dark theme on mobile */
   html, body {
     background-color: var(--dottore-dark) !important;
@@ -678,6 +689,55 @@ blockquote {
       0 0 5px var(--dottore-primary),
       0 0 10px var(--dottore-primary),
       0 0 15px var(--dottore-primary) !important;
+  }
+  
+  /* Fix notification box flashing and spacing */
+  .notification-box {
+    animation: none !important;
+    transition: none !important;
+    margin: 1rem 0 !important;
+    padding: 0.75rem !important;
+  }
+  
+  /* Fix notification icons overlapping */
+  .notification-box::before {
+    position: static !important;
+    display: inline !important;
+    margin-right: 0.5rem !important;
+    font-size: 1rem !important;
+  }
+  
+  .notification-title {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+  
+  .notification-content {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-top: 0.5rem !important;
+  }
+  
+  /* Fix code formatting on mobile */
+  pre, code {
+    font-size: 0.75rem !important;
+    padding: 4px 6px !important;
+    line-height: 1.2 !important;
+    word-break: break-all !important;
+  }
+  
+  /* Fix link spacing issues */
+  a {
+    display: inline !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Fix text spacing */
+  p, li, td {
+    line-height: 1.4 !important;
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
   }
   
   /* Header size adjustments */
@@ -702,20 +762,66 @@ blockquote {
     font-size: 0.9rem;
   }
   
-  /* Tab content mobile padding */
+  /* Tab content mobile padding - prevent flashing */
   .tab-content {
     padding: 1rem;
+    animation: none !important;
+    transition: none !important;
+    background-color: transparent !important;
   }
   
-  /* Notification boxes mobile adjustments */
+  .tab-content > div {
+    animation: none !important;
+    transition: none !important;
+    border: none !important;
+    background: transparent !important;
+  }
+  
+  /* Fix mobile text formatting */
+  .tab-content p {
+    margin-bottom: 1rem !important;
+    text-align: left !important;
+    line-height: 1.4 !important;
+  }
+  
+  .tab-content ul, .tab-content ol {
+    padding-left: 1.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .tab-content li {
+    margin-bottom: 0.5rem !important;
+    text-align: left !important;
+    line-height: 1.4 !important;
+  }
+  
+  /* Notification boxes mobile adjustments - fix overlapping icons */
   .notification-box {
-    padding: 1rem;
-    margin: 1rem 0;
+    padding: 0.75rem !important;
+    margin: 1rem 0 !important;
+    animation: none !important;
+    transition: none !important;
+    position: relative !important;
   }
   
-  .notification-box .notification-title,
+  .notification-box::before {
+    position: static !important;
+    display: inline !important;
+    margin-right: 0.5rem !important;
+    font-size: 1rem !important;
+  }
+  
+  .notification-box .notification-title {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    font-size: 0.9rem;
+    display: inline !important;
+  }
+  
   .notification-box .notification-content {
-    padding-left: 2rem;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    margin-top: 0.5rem !important;
     font-size: 0.9rem;
   }
   
@@ -744,11 +850,43 @@ blockquote {
     gap: 1rem !important;
   }
   
-  /* Code blocks mobile */
+  /* Code blocks mobile - fix sizing */
   pre, code {
-    padding: 8px 12px;
-    font-size: 0.8rem;
+    padding: 4px 6px !important;
+    font-size: 0.75rem !important;
+    line-height: 1.2 !important;
     overflow-x: auto;
+    word-break: break-all !important;
+  }
+  
+  pre {
+    padding: 8px 10px !important;
+    font-size: 0.75rem !important;
+  }
+  
+  /* Mobile tab fixes - prevent flashing */
+  .tab {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .tab.active {
+    animation: none !important;
+    transition: none !important;
+    box-shadow: 0 2px 8px rgba(0, 224, 230, 0.3) !important;
+  }
+  
+  /* Ko-fi button mobile */
+  .ko-fi-button {
+    width: 100% !important;
+    padding: 12px !important;
+    font-size: 1rem !important;
+    animation: none !important;
+    transition: opacity 0.3s ease !important;
+  }
+  
+  .ko-fi-button i {
+    margin-right: 8px !important;
   }
   
   /* Button mobile adjustments */
