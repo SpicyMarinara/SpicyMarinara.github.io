@@ -421,7 +421,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <td>200k</td>
           <td>Low</td>
           <td>Smartest one on the list, has a unique writing style and creativity</td>
-          <td>~~Screw it, Opussy won, the only downside is it costs you a liver to use it.~~ Opus can't be beat. It's impossible. The writing is too good. The smarts even more so. Nothing else compares right now</td>
+          <td><span class="strikethrough">Screw it, Opussy won, the only downside is it costs you a liver to use it.</span> Opus can't be beat. It's impossible. The writing is too good. The smarts even more so. Nothing else compares right now</td>
         </tr>
         <tr>
           <td>2</td>
@@ -524,7 +524,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="notification-box warning">
       <div class="notification-title">Warning</div>
-      <div class="notification-content">~~I noticed some underlying issues with GPT-5. I'm barely able to control it; it feels like every time I get a generation, it's like a different model responding. Requires further testing. It may be awful, actually. It's just shit. Stick to ChatGPT-4o while you can.~~ They fixed GPT-5 at last, so I've added it to the ranking officially.</div>
+      <div class="notification-content"><span class="strikethrough">I noticed some underlying issues with GPT-5. I'm barely able to control it; it feels like every time I get a generation, it's like a different model responding. Requires further testing. It may be awful, actually. It's just shit. Stick to ChatGPT-4o while you can.</span> They fixed GPT-5 at last, so I've added it to the ranking officially.</div>
     </div>
 
     <h2>Model Providers</h2>
@@ -644,7 +644,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <p><code>mgrabower97@gmail.com</code></p>
 
     <h2>Socials:</h2>
-    <p><a href="https://linktr.ee/Spicy_Marinara">https://linktr.ee/Spicy_Marinara</a></p>
+    <p><code><a href="https://linktr.ee/Spicy_Marinara">https://linktr.ee/Spicy_Marinara</a></code></p>
   </div>
 
   <div id="fanarts" class="tab-content">

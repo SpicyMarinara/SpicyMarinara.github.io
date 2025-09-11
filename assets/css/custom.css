@@ -95,12 +95,39 @@ a:hover {
 /* Enhanced code blocks */
 pre, code {
   background-color: var(--dottore-panel) !important;
-  color: var(--dottore-text) !important;
+  color: var(--synthwave-green) !important;
   border-left: 3px solid var(--dottore-primary);
-  padding: 12px 16px;
+  padding: 8px 12px;
   border-radius: 8px;
   font-family: 'JetBrains Mono', monospace;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-size: 0.85em;
+  line-height: 1.4;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  display: inline-block;
+  margin: 2px 0;
+}
+
+pre {
+  display: block;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+code {
+  white-space: nowrap;
+  max-width: fit-content;
+}
+
+/* Strikethrough text */
+.strikethrough {
+  text-decoration: line-through;
+  opacity: 0.6;
+  color: var(--dottore-text-muted);
 }
 
 /* Buttons with enhanced styling */
@@ -264,8 +291,8 @@ pre, code {
 /* Neon title animation */
 .neon-title {
   text-align: center;
-  margin: 2rem 0 3rem 0;
-  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  padding: 0.5rem;
 }
 
 .neon-text {
