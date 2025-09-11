@@ -178,12 +178,16 @@ pre, code {
 
 .tab-nav {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   background: var(--dottore-panel-light);
   border-bottom: 2px solid var(--dottore-primary);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   scrollbar-color: var(--dottore-primary) var(--dottore-darker);
+  gap: 4px;
+  padding: 4px;
 }
 
 /* Hide scrollbar for tabs on mobile */
@@ -508,6 +512,17 @@ blockquote {
   /* Even smaller adjustments */
   .container {
     padding: 8px;
+  }
+  
+  .tab-nav {
+    justify-content: center;
+    gap: 2px;
+    padding: 2px;
+  }
+  
+  .tab-button {
+    padding: 8px 10px;
+    font-size: 12px;
   }
   
   h1 {
