@@ -695,9 +695,9 @@ blockquote {
     transition: opacity 0.2s ease !important;
   }
   
-  /* Completely disable tab animations to fix bugs */
+  /* Disable problematic animations but allow simple background changes */
   .tab-nav button {
-    transition: none !important;
+    transition: background-color 0.1s ease !important;
     animation: none !important;
   }
   
@@ -831,15 +831,24 @@ blockquote {
     line-height: 1.6 !important;
     word-spacing: normal !important;
     white-space: normal !important;
-    word-wrap: break-word !important;
-    overflow-wrap: break-word !important;
+    word-wrap: normal !important;
+    overflow-wrap: normal !important;
     hyphens: none !important;
+    text-indent: 0 !important;
   }
   
   .tab-content p a {
     display: inline !important;
-    white-space: nowrap !important;
-    word-break: keep-all !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    text-decoration: underline !important;
+  }
+  
+  /* Prevent weird line breaking */
+  .tab-content p, .tab-content span, .tab-content strong {
+    word-wrap: normal !important;
+    overflow-wrap: normal !important;
+    white-space: normal !important;
   }
   
   .tab-content ul, .tab-content ol {
@@ -944,10 +953,12 @@ blockquote {
     font-size: 0.75rem !important;
   }
   
-  /* Mobile tab fixes - simple static styles */
+  /* Mobile tab fixes - completely static styles */
   .tab-nav button {
     animation: none !important;
     transition: none !important;
+    background: rgba(0, 224, 230, 0.05) !important;
+    border: 1px solid rgba(0, 224, 230, 0.2) !important;
   }
   
   .tab-nav button.active {
@@ -955,11 +966,18 @@ blockquote {
     color: white !important;
     box-shadow: none !important;
     transform: none !important;
+    border: 1px solid var(--dottore-primary) !important;
   }
   
-  .tab-nav button:hover:not(.active) {
+  .tab-nav button:hover {
     background: rgba(0, 224, 230, 0.1) !important;
     transform: none !important;
+    border: 1px solid rgba(0, 224, 230, 0.3) !important;
+  }
+  
+  .tab-nav button.active:hover {
+    background: var(--dottore-primary) !important;
+    border: 1px solid var(--dottore-primary) !important;
   }
   
 
@@ -976,11 +994,19 @@ blockquote {
   }
   
   .ko-fi-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
     width: 200px !important;
     max-width: 90% !important;
+    padding: 0.6rem 1.2rem !important;
+    font-size: 0.9rem !important;
+    text-decoration: none !important;
   }
   
   .social-link {
+    display: inline-flex !important;
+    align-items: center !important;
     padding: 0.6rem 1.2rem !important;
     font-size: 0.9rem !important;
     width: 200px !important;
