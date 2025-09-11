@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marinara's LLM Hub</title>
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <style>
+        /* Ensure our styles load properly */
+        .tab-container { margin: 2rem 0; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.imgur.com/Qsszm6i.gif" alt="The Official Dottore Schizo Gooner" style="max-width: 100%; height: auto; margin-bottom: 2rem;">
+
+        <div class="tab-container">
+            <div class="tab-nav">
+                <button class="tab-link active" onclick="showTab(event, 'downloads')">Downloads</button>
+                <button class="tab-link" onclick="showTab(event, 'about')">About</button>
+                <button class="tab-link" onclick="showTab(event, 'lexicon')">Lexicon</button>
+                <button class="tab-link" onclick="showTab(event, 'guides')">Guides</button>
+                <button class="tab-link" onclick="showTab(event, 'faq')">FAQ</button>
+                <button class="tab-link" onclick="showTab(event, 'recommendations')">Recommendations</button>
+                <button class="tab-link" onclick="showTab(event, 'support')">Support</button>
+                <button class="tab-link" onclick="showTab(event, 'contact')">Contact</button>
+                <button class="tab-link" onclick="showTab(event, 'fanarts')">Fanarts</button>
+            </div>
+
+            <div id="downloads" class="tab-content active">
+                <img src="https://i.imgur.com/p9xhDD8.png" alt="Dottore Banner" style="max-width: 100%; height: auto; margin-bottom: 2rem; border-radius: 8px;">
+                
+                <h1>Downloads</h1>
+
+                <div class="notification-box note">
+                    <div class="notification-title">Note</div>
+                    <div class="notification-content">The newest version is 6.0.</div>
+                </div>
+
+                <div class="notification-box tip">
+                    <div class="notification-title">Tip</div>
+                    <div class="notification-content">The preset below is for Chat Completion only. For my older Text Completion presets, visit my <a href="https://huggingface.co/MarinaraSpaghetti/SillyTavern-Settings">HuggingFace</a>.</div>
+                </div>
+
+                <div class="notification-box warning">
+                    <div class="notification-title">Warning</div>
+                    <div class="notification-content">My presets are designed for chatting, roleplaying, and fiction writing with LLMs. Due to their uncensored nature, they are intended for adults only. <ins>By downloading the files below, you confirm that you are 18 years of age or older and acknowledge that I am not responsible for any content you create or share using these presets.</ins></div>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Link</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials.zip">Master Download</a></td>
+                            <td>Downloads the entire .zip file that includes the preset, regexes, logit bias, and character cards</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Preset">Preset</a></td>
+                            <td>Universal preset alone</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Regexes">Regexes</a></td>
+                            <td>Regexes that clean formatting errors, remove em dashes, and unify formats</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Logit%20Bias">Logit Bias</a></td>
+                            <td>Logit bias for OpenAI models</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials/Cards/Professor%20Mari.png">Professor Mari</a></td>
+                            <td>Professor Mari's character card, an assistant who will teach you all about LLMs and help you out with creating character cards</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials/Cards/Dottore.png">Dottore</a></td>
+                            <td>Dottore's character card, the Second of the Eleven Fatui Harbingers from Genshin Impact</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <img src="https://i.imgur.com/G610Q95.png" alt="How to download" style="max-width: 100%; height: auto;">
+            </div>
+
+            <div id="about" class="tab-content">
+                <h1>About</h1>
+                <p>Howdy, I'm Marinara!</p>
+                <p>An LLM enthusiast, teacher, merger, and prompt engineer since late 2023. Additionally, an artist and coder on occasion. I'm the author of models such as <a href="https://huggingface.co/MarinaraSpaghetti/NemoMix-Unleashed-12B">NemoMix Unleashed</a> and many universal prompts, including professional ones for companies like <a href="https://www.tolans.com/">Tolan</a>, <a href="https://www.mydreamcompanion.com/">MyDreamCompanion</a>, or <a href="https://toffee.ai/">Toffee.ai</a>. I consult for various AI services and offer commissions for cards, prompts, and artworks.</p>
+                <p>Here you can find my roleplaying and creative writing presets, as well as recommendations, cards, and guides. All related to LLMs. Feel free to suggest new sections to add or models to test. I hope you'll find it informative, helpful, and fun to read.</p>
+                <p>Cheers and happy gooning!</p>
+            </div>
+
+            <!-- Additional tabs would go here with the same content structure -->
+            <div id="contact" class="tab-content">
+                <h1>Contact</h1>
+                <h2>Discord:</h2>
+                <p><code>marinara_spaghetti</code></p>
+                <h2>E-mail:</h2>
+                <p><code>mgrabower97@gmail.com</code></p>
+                <h2>Socials:</h2>
+                <p><a href="https://linktr.ee/Spicy_Marinara">https://linktr.ee/Spicy_Marinara</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        // Set first tab as active by default
+        document.addEventListener('DOMContentLoaded', function() {
+            if (document.querySelector('.tab-link')) {
+                document.querySelector('.tab-link').click();
+            }
+        });
+    </script>
+</body>
+</html>
