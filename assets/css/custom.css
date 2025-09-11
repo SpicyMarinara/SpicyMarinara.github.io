@@ -496,6 +496,9 @@ th, td {
   padding: 16px;
   text-align: left;
   border-bottom: 1px solid rgba(0, 224, 230, 0.2);
+  vertical-align: top;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 th {
@@ -506,6 +509,25 @@ th {
   letter-spacing: 0.5px;
   font-size: 0.9rem;
 }
+
+/* Table layout fixes */
+table {
+  table-layout: fixed;
+}
+
+/* Specific column widths for recommendations table */
+#recommendations table th:nth-child(1),
+#recommendations table td:nth-child(1) { width: 8%; }
+#recommendations table th:nth-child(2),
+#recommendations table td:nth-child(2) { width: 22%; }
+#recommendations table th:nth-child(3),
+#recommendations table td:nth-child(3) { width: 10%; }
+#recommendations table th:nth-child(4),
+#recommendations table td:nth-child(4) { width: 12%; }
+#recommendations table th:nth-child(5),
+#recommendations table td:nth-child(5) { width: 24%; }
+#recommendations table th:nth-child(6),
+#recommendations table td:nth-child(6) { width: 24%; }
 
 tr:hover {
   background: rgba(0, 224, 230, 0.05);

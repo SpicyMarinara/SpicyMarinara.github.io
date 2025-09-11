@@ -28,22 +28,22 @@ document.addEventListener('DOMContentLoaded', function() {
   <h1 class="neon-text">Marinara's LLM Hub</h1>
 </div>
 
-![The Official Dottore Schizo Gooner](https://i.imgur.com/Qsszm6i.gif){: style="max-width: 400px; height: auto; display: block; margin: 0 auto 2rem auto; border-radius: 8px;"}
+![The Official Dottore Schizo Gooner](https://i.imgur.com/Qsszm6i.gif){: style="max-width: 400px; height: auto; display: block; margin: 1.5rem auto 1.5rem auto; border-radius: 8px;"}
 
 <div class="tab-container">
   <div class="tab-nav">
-    <button class="tab-link active" onclick="showTab(event, 'downloads')">Downloads</button>
-    <button class="tab-link" onclick="showTab(event, 'about')">About</button>
-    <button class="tab-link" onclick="showTab(event, 'lexicon')">Lexicon</button>
+    <button class="tab-link active" onclick="showTab(event, 'about')">About</button>
+    <button class="tab-link" onclick="showTab(event, 'downloads')">Downloads</button>
+    <button class="tab-link" onclick="showTab(event, 'glossary')">Glossary</button>
     <button class="tab-link" onclick="showTab(event, 'guides')">Guides</button>
     <button class="tab-link" onclick="showTab(event, 'faq')">FAQ</button>
     <button class="tab-link" onclick="showTab(event, 'recommendations')">Recommendations</button>
-    <button class="tab-link" onclick="showTab(event, 'support')">Support</button>
     <button class="tab-link" onclick="showTab(event, 'contact')">Contact</button>
+    <button class="tab-link" onclick="showTab(event, 'support')">Support</button>
     <button class="tab-link" onclick="showTab(event, 'fanarts')">Fanarts</button>
   </div>
 
-  <div id="downloads" class="tab-content active">
+  <div id="downloads" class="tab-content">
     <img src="https://i.imgur.com/p9xhDD8.png" alt="Dottore Banner" style="max-width: 100%; height: auto; margin: 0 auto 2rem auto; border-radius: 8px; display: block;">
     
     <h1>Downloads</h1>
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <img src="https://i.imgur.com/G610Q95.png" alt="How to download" style="max-width: 100%; height: auto;">
   </div>
 
-  <div id="about" class="tab-content">
+  <div id="about" class="tab-content active">
     <h1>About</h1>
     
     <p>Howdy, I'm Marinara!</p>
@@ -113,8 +113,8 @@ document.addEventListener('DOMContentLoaded', function() {
     <p>Cheers and happy gooning!</p>
   </div>
 
-  <div id="lexicon" class="tab-content">
-    <h1>Lexicon</h1>
+  <div id="glossary" class="tab-content">
+    <h1>Glossary</h1>
     
     <table>
       <thead>
@@ -380,6 +380,11 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="notification-box note">
       <div class="notification-title">Q: Which frontend do you use?</div>
       <div class="notification-content">A: SillyTavern.</div>
+    </div>
+
+    <div class="notification-box note">
+      <div class="notification-title">Q: I got a refusal?</div>
+      <div class="notification-content">A: Skill issue.</div>
     </div>
   </div>
 
