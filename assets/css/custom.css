@@ -684,18 +684,20 @@ blockquote {
 
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 768px) {
-  /* Disable problematic animations on mobile */
-  .neon-text, .tab-content {
+  /* Disable ALL flashing animations on mobile */
+  *, *::before, *::after {
     animation: none !important;
+    transition: none !important;
   }
   
-  /* Allow safe transitions */
-  .ko-fi-button, .social-link, .tab-nav button {
-    transition: all 0.3s ease !important;
+  /* Allow only simple opacity transitions for buttons */
+  .ko-fi-button, .social-link {
+    transition: opacity 0.2s ease !important;
   }
   
-  /* Disable notification box animations */
-  .notification-box {
+  /* Completely disable tab animations to fix bugs */
+  .tab-nav button {
+    transition: none !important;
     animation: none !important;
   }
   
@@ -942,52 +944,49 @@ blockquote {
     font-size: 0.75rem !important;
   }
   
-  /* Mobile tab fixes - allow safe animations */
+  /* Mobile tab fixes - simple static styles */
   .tab-nav button {
     animation: none !important;
-    transition: all 0.3s ease !important;
+    transition: none !important;
   }
   
   .tab-nav button.active {
-    background: linear-gradient(45deg, var(--dottore-primary), var(--synthwave-pink)) !important;
+    background: var(--dottore-primary) !important;
     color: white !important;
-    box-shadow: 0 2px 8px rgba(0, 224, 230, 0.4), 0 0 15px rgba(255, 45, 146, 0.3) !important;
-    transform: translateY(-1px) !important;
+    box-shadow: none !important;
+    transform: none !important;
   }
   
   .tab-nav button:hover:not(.active) {
     background: rgba(0, 224, 230, 0.1) !important;
-    transform: translateY(-1px) !important;
+    transform: none !important;
   }
   
-  /* Ko-fi button mobile - smaller size */
-  .ko-fi-button {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 0.5rem 1rem !important;
-    font-size: 0.9rem !important;
-    animation: none !important;
-    transition: opacity 0.3s ease !important;
-    width: auto !important;
-    max-width: none !important;
-  }
+
   
-  .ko-fi-button i {
-    margin-right: 6px !important;
-  }
-  
-  /* Footer mobile adjustments */
+  /* Footer mobile adjustments - stack buttons vertically */
   footer {
     padding: 1.5rem 1rem !important;
   }
   
+  footer div[style*="flex"] {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    align-items: center !important;
+  }
+  
+  .ko-fi-button {
+    width: 200px !important;
+    max-width: 90% !important;
+  }
+  
   .social-link {
-    padding: 0.5rem 1rem !important;
+    padding: 0.6rem 1.2rem !important;
     font-size: 0.9rem !important;
-    flex: 0 1 auto !important;
+    width: 200px !important;
+    max-width: 90% !important;
     justify-content: center !important;
-    min-width: 100px !important;
+    text-align: center !important;
   }
   
   /* Button mobile adjustments */
