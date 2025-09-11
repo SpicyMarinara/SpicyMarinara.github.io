@@ -557,17 +557,17 @@ table {
 
 /* Specific column widths for recommendations table */
 #recommendations table th:nth-child(1),
-#recommendations table td:nth-child(1) { width: 8%; }
+#recommendations table td:nth-child(1) { width: 6%; }
 #recommendations table th:nth-child(2),
-#recommendations table td:nth-child(2) { width: 22%; }
+#recommendations table td:nth-child(2) { width: 20%; }
 #recommendations table th:nth-child(3),
-#recommendations table td:nth-child(3) { width: 10%; }
+#recommendations table td:nth-child(3) { width: 8%; }
 #recommendations table th:nth-child(4),
-#recommendations table td:nth-child(4) { width: 12%; }
+#recommendations table td:nth-child(4) { width: 10%; }
 #recommendations table th:nth-child(5),
-#recommendations table td:nth-child(5) { width: 24%; }
+#recommendations table td:nth-child(5) { width: 28%; }
 #recommendations table th:nth-child(6),
-#recommendations table td:nth-child(6) { width: 24%; }
+#recommendations table td:nth-child(6) { width: 28%; }
 
 tr:hover {
   background: rgba(0, 224, 230, 0.05);
