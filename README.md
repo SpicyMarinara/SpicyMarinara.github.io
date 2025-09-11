@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <link rel="stylesheet" href="assets/css/custom.css">
 <script>
 function showTab(evt, tabName) {
