@@ -181,6 +181,23 @@ pre, code {
   background: var(--dottore-panel-light);
   border-bottom: 2px solid var(--dottore-primary);
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--dottore-primary) var(--dottore-darker);
+}
+
+/* Hide scrollbar for tabs on mobile */
+.tab-nav::-webkit-scrollbar {
+  height: 4px;
+}
+
+.tab-nav::-webkit-scrollbar-track {
+  background: var(--dottore-darker);
+}
+
+.tab-nav::-webkit-scrollbar-thumb {
+  background: var(--dottore-primary);
+  border-radius: 2px;
 }
 
 .tab-nav button {
@@ -403,26 +420,233 @@ blockquote {
 
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 768px) {
+  /* Container adjustments */
+  .container {
+    padding: 10px;
+  }
+  
+  /* Header size adjustments */
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  /* Tab navigation mobile-friendly */
   .tab-nav {
     flex-direction: column;
+    gap: 0;
   }
   
   .tab-nav button {
     width: 100%;
     text-align: left;
+    padding: 12px 16px !important;
+    font-size: 0.9rem;
   }
   
+  /* Tab content mobile padding */
   .tab-content {
     padding: 1rem;
   }
   
+  /* Notification boxes mobile adjustments */
   .notification-box {
     padding: 1rem;
+    margin: 1rem 0;
   }
   
   .notification-box .notification-title,
   .notification-box .notification-content {
     padding-left: 2rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Table responsiveness */
+  table {
+    font-size: 0.8rem;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  th, td {
+    padding: 8px;
+    min-width: 120px;
+  }
+  
+  /* Images mobile responsive */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Fanart gallery mobile layout */
+  #fanarts .tab-content div {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
+    gap: 1rem !important;
+  }
+  
+  /* Code blocks mobile */
+  pre, code {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    overflow-x: auto;
+  }
+  
+  /* Button mobile adjustments */
+  .btn, button {
+    padding: 10px 20px !important;
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small devices (phones in portrait) */
+@media (max-width: 480px) {
+  /* Even smaller adjustments */
+  .container {
+    padding: 8px;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  .tab-content {
+    padding: 0.75rem;
+  }
+  
+  .notification-box {
+    padding: 0.75rem;
+  }
+  
+  .notification-box .notification-title,
+  .notification-box .notification-content {
+    padding-left: 1.5rem;
+    font-size: 0.85rem;
+  }
+  
+  table {
+    font-size: 0.75rem;
+  }
+  
+  th, td {
+    padding: 6px;
+    min-width: 100px;
+  }
+  
+  /* Fanart gallery for very small screens */
+  #fanarts .tab-content div {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)) !important;
+  }
+  
+  /* Tab buttons for very small screens */
+  .tab-nav button {
+    padding: 10px 12px !important;
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablet landscape adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 15px;
+  }
+  
+  .tab-content {
+    padding: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* === TOUCH AND MOBILE ENHANCEMENTS === */
+
+/* Better touch targets */
+@media (pointer: coarse) {
+  .tab-nav button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  a {
+    min-height: 44px;
+    display: inline-block;
+    line-height: 44px;
+    padding: 0 8px;
+  }
+  
+  button, .btn {
+    min-height: 44px;
+  }
+}
+
+/* Smooth scrolling for mobile */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent zoom on input focus on iOS */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select, textarea, input[type="text"], input[type="password"], 
+  input[type="datetime"], input[type="datetime-local"], 
+  input[type="date"], input[type="month"], input[type="time"], 
+  input[type="week"], input[type="number"], input[type="email"], 
+  input[type="url"], input[type="search"], input[type="tel"], 
+  input[type="color"] {
+    font-size: 16px;
+  }
+}
+
+/* Mobile-specific hover states (disable on touch) */
+@media (hover: none) {
+  .tab-nav button:hover {
+    background: transparent !important;
+  }
+  
+  .notification-box:hover {
+    transform: none;
+  }
+  
+  img:hover {
+    transform: none;
+  }
+}
+
+/* Optimize font loading for mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Reduce animations on mobile for performance */
+  *, *::before, *::after {
+    animation-duration: 0.2s !important;
+    transition-duration: 0.2s !important;
+  }
+}
+
+/* High DPI displays (retina) */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min--moz-device-pixel-ratio: 2),
+       only screen and (-o-min-device-pixel-ratio: 2/1),
+       only screen and (min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi),
+       only screen and (min-resolution: 2dppx) {
+  /* Sharper text rendering for high DPI */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
 
