@@ -397,6 +397,29 @@ code {
   transform: translateY(0);
 }
 
+/* YouTube video responsive styling */
+.youtube-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--dottore-primary);
+}
+
+.youtube-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
 /* Notification boxes */
 .notification-box {
   margin: 1.5rem 0;
@@ -692,6 +715,12 @@ blockquote {
   .neon-text {
     font-size: 1.8rem;
     letter-spacing: 0.1em;
+  }
+  
+  .youtube-container {
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   }
   
   h1 {

@@ -239,6 +239,19 @@ document.addEventListener('DOMContentLoaded', function() {
   <div id="guides" class="tab-content">
     <h1>Guides</h1>
 
+    <div class="notification-box tip">
+      <div class="notification-title">Video Tutorial</div>
+      <div class="notification-content">Check out my comprehensive video guide for a visual walkthrough!</div>
+    </div>
+
+    <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; margin: 2rem 0; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);">
+      <iframe 
+        src="https://www.youtube.com/embed/vG8q3CsBGQQ" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 12px;"
+        allowfullscreen>
+      </iframe>
+    </div>
+
     <h2>How To Import A Preset?</h2>
 
     <div class="notification-box tip">
