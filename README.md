@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-![The Official Dottore Schizo Gooner](https://i.imgur.com/Qsszm6i.gif)
+![The Official Dottore Schizo Gooner](https://i.imgur.com/Qsszm6i.gif){: style="max-width: 400px; height: auto; display: block; margin: 0 auto 2rem auto; border-radius: 8px;"}
 
 <div class="tab-container">
   <div class="tab-nav">
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 
   <div id="downloads" class="tab-content active">
-    <img src="https://i.imgur.com/p9xhDD8.png" alt="Dottore Banner" style="max-width: 100%; height: auto; margin-bottom: 2rem; border-radius: 8px;">
+    <img src="https://i.imgur.com/p9xhDD8.png" alt="Dottore Banner" style="max-width: 100%; height: auto; margin: 0 auto 2rem auto; border-radius: 8px; display: block;">
     
     <h1>Downloads</h1>
 
@@ -653,41 +653,4 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
   </div>
 
-</div>
-
-# Support Me
-
-Enjoy what I do? Please, consider supporting me on Ko-fi! These donations help fund my models' testing and my prompt engineering endeavors!
-
-[Ko-fi](https://ko-fi.com/marinara_spaghetti)
-
-Thank you!
-
-💙
-
-# Contact
-
-Discord:
-
-`marinara_spaghetti`
-
-E-mail:
-
-`mgrabower97@gmail.com`
-
-Socials:
-
-`https://linktr.ee/Spicy_Marinara`
-
-# Fanarts
-
-<div align="center">
-	<img src="https://i.imgur.com/p6rhYTF.gif" alt="Huxnt3rx" style="width:18%; max-width:200px;">
-	<img src="https://i.imgur.com/SjQYnZD.png" alt="Vynocchi" style="width:18%; max-width:200px;">
-	<img src="https://i.imgur.com/NbRDrCt.jpeg" alt="Huxnt3rx" style="width:18%; max-width:200px;">
-	<img src="https://i.imgur.com/cKRfHeM.png" alt="Huxnt3rx" style="width:18%; max-width:200px;">
-	<img src="https://i.imgur.com/t4vn272.png" alt="Xixica" style="width:18%; max-width:200px;">
-	<img src="https://i.imgur.com/dhGFKvc.png" alt="Xixica" style="width:18%; max-width:200px;">
-	<img src="https://i.imgur.com/5X67Oks.jpeg" alt="s0lu" style="width:18%; max-width:200px;">
-	<img src="https://i.imgur.com/OG9jwmB.gif" alt="Huxnt3rx" style="width:18%; max-width:200px;">
 </div>
