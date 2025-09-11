@@ -149,12 +149,15 @@ code {
 
 /* Ko-fi Button Styling */
 .ko-fi-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   background: linear-gradient(45deg, #ff5e5b, #ff9500);
   color: white !important;
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -755,13 +758,23 @@ blockquote {
     display: inline !important;
     margin: 0 !important;
     padding: 0 !important;
+    word-break: keep-all !important;
+    white-space: normal !important;
   }
   
   /* Fix text spacing */
   p, li, td {
-    line-height: 1.4 !important;
+    line-height: 1.5 !important;
     word-spacing: normal !important;
     letter-spacing: normal !important;
+    white-space: normal !important;
+    word-wrap: normal !important;
+  }
+  
+  /* Ensure proper text flow */
+  .tab-content * {
+    word-break: normal !important;
+    overflow-wrap: normal !important;
   }
   
   /* Header size adjustments */
@@ -805,7 +818,15 @@ blockquote {
   .tab-content p {
     margin-bottom: 1rem !important;
     text-align: left !important;
-    line-height: 1.4 !important;
+    line-height: 1.5 !important;
+    word-spacing: normal !important;
+    white-space: normal !important;
+  }
+  
+  .tab-content p a {
+    display: inline !important;
+    white-space: normal !important;
+    word-break: keep-all !important;
   }
   
   .tab-content ul, .tab-content ol {
@@ -816,30 +837,51 @@ blockquote {
   .tab-content li {
     margin-bottom: 0.5rem !important;
     text-align: left !important;
-    line-height: 1.4 !important;
+    line-height: 1.5 !important;
+    white-space: normal !important;
   }
   
-  /* Notification boxes mobile adjustments - fix overlapping icons */
+  /* Notification boxes mobile adjustments - keep pretty frames */
   .notification-box {
-    padding: 0.75rem !important;
+    padding: 1rem !important;
     margin: 1rem 0 !important;
     animation: none !important;
     transition: none !important;
     position: relative !important;
+    border-radius: 8px !important;
+    border-left: 4px solid !important;
+  }
+  
+  .notification-box.note {
+    background: rgba(0, 123, 255, 0.1) !important;
+    border-left-color: #007bff !important;
+  }
+  
+  .notification-box.tip {
+    background: rgba(40, 167, 69, 0.1) !important;
+    border-left-color: #28a745 !important;
+  }
+  
+  .notification-box.warning {
+    background: rgba(255, 193, 7, 0.1) !important;
+    border-left-color: #ffc107 !important;
   }
   
   .notification-box::before {
     position: static !important;
-    display: inline !important;
+    display: inline-block !important;
     margin-right: 0.5rem !important;
     font-size: 1rem !important;
+    vertical-align: middle !important;
   }
   
   .notification-box .notification-title {
     padding-left: 0 !important;
     margin-left: 0 !important;
     font-size: 0.9rem;
-    display: inline !important;
+    display: inline-block !important;
+    font-weight: 600 !important;
+    vertical-align: middle !important;
   }
   
   .notification-box .notification-content {
@@ -847,6 +889,7 @@ blockquote {
     margin-left: 0 !important;
     margin-top: 0.5rem !important;
     font-size: 0.9rem;
+    display: block !important;
   }
   
   /* Table responsiveness */
@@ -900,14 +943,17 @@ blockquote {
     box-shadow: 0 2px 8px rgba(0, 224, 230, 0.3) !important;
   }
   
-  /* Ko-fi button mobile */
+  /* Ko-fi button mobile - match social links size */
   .ko-fi-button {
-    width: 100% !important;
-    max-width: 300px !important;
-    padding: 12px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.75rem 1.5rem !important;
     font-size: 1rem !important;
     animation: none !important;
     transition: opacity 0.3s ease !important;
+    width: auto !important;
+    max-width: none !important;
   }
   
   .ko-fi-button i {
@@ -920,10 +966,11 @@ blockquote {
   }
   
   .social-link {
-    padding: 0.6rem 1rem !important;
-    font-size: 0.9rem !important;
-    flex: 1 1 auto !important;
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1rem !important;
+    flex: 0 1 auto !important;
     justify-content: center !important;
+    min-width: 120px !important;
   }
   
   /* Button mobile adjustments */
