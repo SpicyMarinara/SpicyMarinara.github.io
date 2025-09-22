@@ -1162,6 +1162,8 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 
+/* (Removed print-specific resume styles) */
+
 /* Prevent zoom on input focus on iOS */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   select, textarea, input[type="text"], input[type="password"], 
