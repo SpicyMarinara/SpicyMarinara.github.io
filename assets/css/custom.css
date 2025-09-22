@@ -167,6 +167,63 @@ code {
   box-shadow: 0 2px 8px rgba(255, 94, 91, 0.3);
 }
 
+/* Discord Button Styling */
+.discord-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(45deg, #5865f2, #00e0e6);
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(88, 101, 242, 0.3);
+}
+
+.discord-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 224, 230, 0.6);
+  color: white !important;
+  text-decoration: none;
+}
+
+/* Icon Links for Social Media */
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background: rgba(0, 224, 230, 0.1);
+  border: 1px solid rgba(0, 224, 230, 0.3);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  background: rgba(0, 224, 230, 0.2);
+  border-color: var(--dottore-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 224, 230, 0.2);
+  text-decoration: none;
+}
+
+.icon-link img {
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
+}
+
+.icon-link:hover img {
+  filter: brightness(1.2);
+}
+
 /* Social Media Links */
 .social-link {
   display: inline-flex;
@@ -190,11 +247,10 @@ code {
   color: var(--dottore-primary) !important;
 }
 
-.kofi-button:hover {
+.ko-fi-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(255, 94, 91, 0.6);
-  border-color: var(--dottore-primary);
-  color: white;
+  color: white !important;
   text-decoration: none;
 }
 
@@ -428,6 +484,80 @@ code {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+/* Discord neon text styling */
+.neon-discord-link {
+  text-decoration: none !important;
+  display: block;
+  margin-top: 1rem;
+}
+
+.neon-discord-link:hover {
+  text-decoration: none !important;
+}
+
+.neon-discord {
+  font-size: 1.8rem !important;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--dottore-secondary) !important;
+  text-shadow: 
+    0 0 3px var(--dottore-secondary),
+    0 0 6px var(--dottore-secondary),
+    0 0 9px var(--dottore-secondary),
+    0 0 12px #5865f2,
+    0 0 20px #5865f2,
+    0 0 25px #5865f2;
+  background: linear-gradient(
+    45deg,
+    var(--dottore-secondary),
+    #5865f2,
+    var(--dottore-primary),
+    var(--dottore-secondary)
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: neonFlickerDiscord 2.5s ease-in-out infinite alternate, gradientShift 4s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.neon-discord-link:hover .neon-discord {
+  transform: translateY(-2px);
+  text-shadow: 
+    0 0 5px var(--dottore-secondary),
+    0 0 10px var(--dottore-secondary),
+    0 0 15px var(--dottore-secondary),
+    0 0 20px #5865f2,
+    0 0 30px #5865f2,
+    0 0 35px #5865f2;
+}
+
+@keyframes neonFlickerDiscord {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 
+      0 0 3px var(--dottore-secondary),
+      0 0 6px var(--dottore-secondary),
+      0 0 9px var(--dottore-secondary),
+      0 0 12px #5865f2,
+      0 0 20px #5865f2,
+      0 0 25px #5865f2;
+    filter: brightness(1);
+  }
+  20%, 24%, 55% {
+    text-shadow: 
+      0 0 2px var(--dottore-secondary),
+      0 0 4px var(--dottore-secondary),
+      0 0 6px var(--dottore-secondary),
+      0 0 8px #5865f2,
+      0 0 12px #5865f2;
+    filter: brightness(0.8);
+  }
 }
 
 /* Fanart hover effects */
