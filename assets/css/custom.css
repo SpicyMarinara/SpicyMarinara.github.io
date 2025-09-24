@@ -1119,21 +1119,63 @@ blockquote {
     padding: 1.5rem 1rem !important;
   }
   
+  /* Footer mobile styles */
   footer div[style*="flex"] {
     flex-direction: column !important;
-    gap: 0.75rem !important;
+    gap: 1.5rem !important;
     align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  /* Hide empty left spacer on mobile */
+  footer div[style*="flex"] > div:first-child {
+    display: none !important;
+  }
+  
+  /* Center buttons container on mobile */
+  footer div[style*="flex"] > div:nth-child(2) {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  
+  /* Social links container on mobile */
+  footer div[style*="flex"] > div:last-child {
+    flex: none !important;
+    justify-content: center !important;
+    width: 100% !important;
   }
   
   .ko-fi-button {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 200px !important;
+    width: 220px !important;
     max-width: 90% !important;
-    padding: 0.6rem 1.2rem !important;
-    font-size: 0.9rem !important;
+    padding: 0.75rem 1.5rem !important;
+    font-size: 0.95rem !important;
     text-decoration: none !important;
+  }
+  
+  .discord-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 220px !important;
+    max-width: 90% !important;
+    padding: 0.75rem 1.5rem !important;
+    font-size: 0.95rem !important;
+    text-decoration: none !important;
+  }
+  
+  .icon-link {
+    padding: 0.6rem !important;
+  }
+  
+  .icon-link img {
+    width: 24px !important;
+    height: 24px !important;
   }
   
   .social-link {
@@ -1202,11 +1244,22 @@ blockquote {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   }
   
-  .kofi-button {
-    padding: 10px 18px;
-    font-size: 1rem;
+  /* Footer extra small mobile styles */
+  .ko-fi-button, .discord-button {
+    width: 200px !important;
+    padding: 0.7rem 1.2rem !important;
+    font-size: 0.9rem !important;
   }
   
+  .icon-link {
+    padding: 0.5rem !important;
+  }
+  
+  .icon-link img {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
   h1 {
     font-size: 1.5rem;
   }
