@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 
   <div id="downloads" class="tab-content">
-    <img src="https://i.imgur.com/p9xhDD8.png" alt="Dottore Banner" style="max-width: 100%; height: auto; margin: 0 auto 2rem auto; border-radius: 8px; display: block;">
+    <img src="https://i.imgur.com/lveiKRH.png" alt="Dottore Banner" style="max-width: 100%; height: auto; margin: 0 auto 2rem auto; border-radius: 8px; display: block;">
     
     <h1>Downloads</h1>
 
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <h2>Guide To Prompts</h2>
 
-    <img src="https://imgur.com/eWinVla" alt="Guide To Prompts Screenshot" style="max-width: 100%; height: auto; margin: 1rem 0; border-radius: 8px;">
+    <img src="https://i.imgur.com/eWinVla.png" alt="Guide To Prompts Screenshot" style="max-width: 100%; height: auto; margin: 1rem 0; border-radius: 8px;">
 
     <div class="notification-box warning">
       <div class="notification-title">Warning</div>
@@ -264,28 +264,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <ol>
       <li><strong>Type</strong> decides the overall style of your use case.
-        <ul>
+        <ul style="list-style-type: '- ';">
           <li><strong>Game Master:</strong> for both group chats and single roleplays, allowing the model to roleplay for all the characters and the narrator.</li>
           <li><strong>Roleplayer:</strong> specifically for one-on-one roleplays.</li>
           <li><strong>Writer:</strong> for fanfic writing.</li>
         </ul>
       </li>
       <li><strong>Tense</strong> decides the tense of the model's writing.
-        <ul>
+        <ul style="list-style-type: '- ';">
           <li><strong>Past:</strong> Example, "he did it."</li>
           <li><strong>Present:</strong> Example, "he is doing it."</li>
           <li><strong>Future:</strong> Example, "he will do it."</li>
         </ul>
       </li>
       <li><strong>Narration</strong> decides the type of narration.
-        <ul>
+        <ul style="list-style-type: '- ';">
           <li><strong>Third-Person:</strong> Example, "he said."</li>
           <li><strong>Second-Person:</strong> Example, "you said."</li>
           <li><strong>First-Person:</strong> Example, "I said."</li>
         </ul>
       </li>
       <li><strong>POV</strong> decides from which point of view the narration will be.
-        <ul>
+        <ul style="list-style-type: '- ';">
           <li><strong>Omniscient:</strong> POV of a third party, separate observer, who knows what all characters think, perceive, etc.</li>
           <li><strong>Character's:</strong> POV is filtered through what a specific character perceives, thinks, etc.</li>
           <li><strong>User's:</strong> Same as above, but from the user's perspective.</li>
@@ -309,7 +309,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </li>
     </ol>
 
-    <img src="https://imgur.com/WD6OnKX" alt="Optional Toggles Screenshot" style="max-width: 100%; height: auto; margin: 1rem 0; border-radius: 8px;">
+    <img src="https://i.imgur.com/WD6OnKX.png" alt="Optional Toggles Screenshot" style="max-width: 100%; height: auto; margin: 1rem 0; border-radius: 8px;">
 
     <div class="notification-box warning">
       <div class="notification-title">Warning</div>
