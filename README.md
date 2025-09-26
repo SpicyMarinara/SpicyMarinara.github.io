@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="neon-title">
   <h1 class="neon-text">Marinara's LLM Hub</h1>
+  <a href="https://discord.gg/KdAkTg94ME" target="_blank" rel="noopener" class="neon-discord-link">
+    <h2 class="neon-text neon-discord">Join Our Discord Community</h2>
+  </a>
 </div>
 
 ![The Official Dottore Schizo Gooner](https://i.imgur.com/Qsszm6i.gif){: style="max-width: 400px; height: auto; display: block; margin: 1.5rem auto 1.5rem auto; border-radius: 8px;"}
@@ -49,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div class="notification-box note">
       <div class="notification-title">Note</div>
-      <div class="notification-content">The newest version is 6.0. These presets are designed for <strong>SillyTavern</strong>.</div>
+      <div class="notification-content">The newest version is 7.0. These presets are designed for <strong>SillyTavern</strong>.</div>
     </div>
 
     <div class="notification-box tip">
@@ -71,16 +74,16 @@ document.addEventListener('DOMContentLoaded', function() {
       </thead>
       <tbody>
         <tr>
-          <td><a href="https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials.zip">Master Download</a></td>
+          <td><a href="https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara's%20Essentials.zip">Master Download</a> <strong>ᴺᴱᵂ</strong></td>
           <td>Downloads the entire .zip file that includes the preset, regexes, logit bias, and character cards</td>
         </tr>
         <tr>
-          <td><a href="https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Preset">Preset</a></td>
+          <td><a href="https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Preset">Preset</a> <strong>ᴺᴱᵂ</strong></td>
           <td>Universal preset alone</td>
         </tr>
         <tr>
-          <td><a href="https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Regexes">Regexes</a></td>
-          <td>Regexes that clean formatting errors, remove em dashes, and unify formats</td>
+          <td><a href="https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Regexes">Regexes</a> <strong>ᴺᴱᵂ</strong></td>
+          <td>Regexes that customize the prompts' looks, clean formatting errors, remove em dashes, and unify formats</td>
         </tr>
         <tr>
           <td><a href="https://github.com/SpicyMarinara/SillyTavern-Settings/tree/main/Marinara's%20Essentials/Logit%20Bias">Logit Bias</a></td>
@@ -98,6 +101,18 @@ document.addEventListener('DOMContentLoaded', function() {
     </table>
 
     <img src="https://i.imgur.com/G610Q95.png" alt="How to download" style="max-width: 100%; height: auto;">
+
+    <h2>SillyTavern Spotify Music Extension <strong>ᴺᴱᵂ</strong></h2>
+
+    <p>Want to add some music to your SillyTavern experience? Check out my <a href="https://github.com/SpicyMarinara/SillyTavern-Spotify-Music-Extension">SillyTavern Spotify Music Extension</a>! This extension allows you to integrate Spotify with SillyTavern for an enhanced chatting experience.</p>
+
+    <img src="https://i.imgur.com/1bWVr7F.gif" alt="SillyTavern Spotify Music Extension" style="max-width: 80%; height: auto; display: block; margin: 1rem auto; border-radius: 8px;">
+
+    <h2>Discord Buddy <strong>ᴺᴱᵂ</strong></h2>
+
+    <p>Hey, while you're here, perhaps you could also check out my <a href="https://github.com/SpicyMarinara/Discord-Buddy">Discord Buddy</a> project? It's an LLM-powered Discord bot you can host. Open-source, free, with many, many great features. Check it out!</p>
+
+    <img src="https://camo.githubusercontent.com/e0a197fb672dc840d4b9e1a13887855ec3fff93a3bc820dc9afef0e0fe549153/68747470733a2f2f692e696d6775722e636f6d2f4d5a47776937632e6a706567" alt="Sevequiem" style="max-width: 60%; height: auto; display: block; margin: 1rem auto;">
   </div>
 
   <div id="about" class="tab-content active">
@@ -237,6 +252,85 @@ document.addEventListener('DOMContentLoaded', function() {
 
   <div id="guides" class="tab-content">
     <h1>Guides</h1>
+
+    <h2>Guide To Prompts</h2>
+
+    <img src="https://imgur.com/eWinVla" alt="Guide To Prompts Screenshot" style="max-width: 100%; height: auto; margin: 1rem 0; border-radius: 8px;">
+
+    <div class="notification-box warning">
+      <div class="notification-title">Warning</div>
+      <div class="notification-content">All the toggles on the screenshot above are mandatory, but you may have only one active at a time from their respective sections.</div>
+    </div>
+
+    <ol>
+      <li><strong>Type</strong> decides the overall style of your use case.
+        <ul>
+          <li><strong>Game Master:</strong> for both group chats and single roleplays, allowing the model to roleplay for all the characters and the narrator.</li>
+          <li><strong>Roleplayer:</strong> specifically for one-on-one roleplays.</li>
+          <li><strong>Writer:</strong> for fanfic writing.</li>
+        </ul>
+      </li>
+      <li><strong>Tense</strong> decides the tense of the model's writing.
+        <ul>
+          <li><strong>Past:</strong> Example, "he did it."</li>
+          <li><strong>Present:</strong> Example, "he is doing it."</li>
+          <li><strong>Future:</strong> Example, "he will do it."</li>
+        </ul>
+      </li>
+      <li><strong>Narration</strong> decides the type of narration.
+        <ul>
+          <li><strong>Third-Person:</strong> Example, "he said."</li>
+          <li><strong>Second-Person:</strong> Example, "you said."</li>
+          <li><strong>First-Person:</strong> Example, "I said."</li>
+        </ul>
+      </li>
+      <li><strong>POV</strong> decides from which point of view the narration will be.
+        <ul>
+          <li><strong>Omniscient:</strong> POV of a third party, separate observer, who knows what all characters think, perceive, etc.</li>
+          <li><strong>Character's:</strong> POV is filtered through what a specific character perceives, thinks, etc.</li>
+          <li><strong>User's:</strong> Same as above, but from the user's perspective.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <div class="notification-box note">
+      <div class="notification-title">Note</div>
+      <div class="notification-content">You can juxtapose these into your preferred style. Let's say you want the model to always reply in first person from the respective character's perspective. In that case, you select options "First-Person" and "Character's". If you want a third-person limited narration from your protagonist's POV, you should go for options "Third-Person" and "User's".</div>
+    </div>
+
+    <ol start="5">
+      <li><strong>Length</strong> sets the final length of the bot's response.
+        <ul>
+          <li><strong>Flexible:</strong> You allow the model to choose the response's length dynamically, based on the current scene (short if in a dialogue, longer if the plot progresses).</li>
+          <li><strong>Short:</strong> Below 150 words.</li>
+          <li><strong>Moderate:</strong> Between 150 and 300 words.</li>
+          <li><strong>Long:</strong> Above 300 words.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <img src="https://imgur.com/WD6OnKX" alt="Optional Toggles Screenshot" style="max-width: 100%; height: auto; margin: 1rem 0; border-radius: 8px;">
+
+    <div class="notification-box warning">
+      <div class="notification-title">Warning</div>
+      <div class="notification-content">My regexes are required for the optional toggles to display properly in the same format as in the screenshot above.</div>
+    </div>
+
+    <ol>
+      <li><span style="color: #ff9500;"><strong>User's Stats</strong></span> tracks your protagonist's statistics and current statuses. These will affect your roleplay.</li>
+      <li><span style="color: #ffff00;"><strong>Info Box</strong></span> shows details about the current scene. Good for maintaining logical continuity.
+        <ul>
+          <li>Date & Weather</li>
+          <li>Time</li>
+          <li>Location</li>
+          <li>Important Recollections</li>
+          <li>Present Characters & Their Observable States</li>
+        </ul>
+      </li>
+      <li><span style="color: #39ff14;"><strong>Mind Reading</strong></span> allows you to see the character's thoughts.</li>
+      <li><span style="color: #00e0e6;"><strong>Immersive HTML</strong></span> adds active HTML/CSS/JS elements to the narrative.</li>
+      <li><span style="color: #5865f2;"><strong>Randomized Plot Push</strong></span> pushes the narrative forward with a completely random thing. <strong>ENABLE ONLY ONCE AND TURN OFF AFTER THAT, UNLESS YOU WANT RANDOM THINGS HAPPENING EVERY TURN.</strong></li>
+    </ol>
 
     <div class="notification-box tip">
       <div class="notification-title">Video Tutorial</div>
@@ -705,24 +799,36 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- Footer -->
 <footer style="margin-top: 4rem; padding: 2rem 0 1.5rem 0; border-top: 2px solid var(--dottore-primary); background: linear-gradient(135deg, var(--dottore-dark) 0%, rgba(0, 224, 230, 0.05) 100%); text-align: center;">
   
-  <!-- Ko-fi Support Button -->
-  <div style="margin-bottom: 1.5rem;">
-    <a href="https://ko-fi.com/marinara_spaghetti" class="ko-fi-button" target="_blank" rel="noopener">
-      ☕ Support me on Ko-fi
-    </a>
-  </div>
+  <!-- Main Footer Content -->
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 1.5rem;">
+    
+    <!-- Left Side: Empty for spacing -->
+    <div style="flex: 1; display: flex; justify-content: flex-start;">
+    </div>
+    
+    <!-- Center: Ko-fi and Discord Buttons -->
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+      <a href="https://ko-fi.com/marinara_spaghetti" class="ko-fi-button" target="_blank" rel="noopener">
+        <img src="https://cdn.prod.website-files.com/5c14e387dab576fe667689cf/670f5a01229bf8a18f97a3c1_favion.png" alt="Ko-fi" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;"> Support me on Ko-fi
+      </a>
+      <a href="https://discord.gg/KdAkTg94ME" class="discord-button" target="_blank" rel="noopener">
+        <img src="https://toppng.com/uploads/preview/discord-logo-01-discord-logo-11562849833clsolz2mbc.png" alt="Discord" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;"> Join Our Discord
+      </a>
+    </div>
 
-  <!-- Social Media Links -->
-  <div style="margin: 1.5rem 0; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
-    <a href="https://github.com/SpicyMarinara" target="_blank" rel="noopener" class="social-link">
-      <span style="font-size: 1.2rem;">🐙</span> GitHub
-    </a>
-    <a href="https://huggingface.co/MarinaraSpaghetti" target="_blank" rel="noopener" class="social-link">
-      <span style="font-size: 1.2rem;">🤗</span> Hugging Face
-    </a>
-    <a href="https://x.com/Spicy_Marinara_" target="_blank" rel="noopener" class="social-link">
-      <span style="font-size: 1.2rem;">🐦</span> Twitter
-    </a>
+    <!-- Right Side: Social Media Icons Only -->
+    <div style="flex: 1; display: flex; gap: 1rem; align-items: center; justify-content: flex-end;">
+      <a href="https://github.com/SpicyMarinara" target="_blank" rel="noopener" class="icon-link" title="GitHub">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="width: 28px; height: 28px;">
+      </a>
+      <a href="https://huggingface.co/MarinaraSpaghetti" target="_blank" rel="noopener" class="icon-link" title="Hugging Face">
+        <img src="https://registry.npmmirror.com/@lobehub/icons-static-png/1.65.0/files/dark/huggingface-color.png" alt="Hugging Face" style="width: 28px; height: 28px;">
+      </a>
+      <a href="https://x.com/Spicy_Marinara_" target="_blank" rel="noopener" class="icon-link" title="X (Twitter)">
+        <img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/all-icons/twitter-x-1fhy50xzcvkl246hf5ua4.png/twitter-x-jyw81k7vr85ry57c7ym2d.png?_a=DATAg1AAZAA0" alt="X (Twitter)" style="width: 28px; height: 28px;">
+      </a>
+    </div>
+
   </div>
 
   <!-- Copyright and Credits -->
