@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <h2>Guide To Prompts</h2>
 
-    <img src="https://i.imgur.com/eWinVla.png" alt="Guide To Prompts Screenshot" style="max-width: 100%; height: auto; margin: 1rem 0; border-radius: 8px;">
+    <img src="https://i.imgur.com/eWinVla.png" alt="Guide To Prompts Screenshot" style="max-width: 80%; height: auto; margin: 1rem 0; border-radius: 8px;">
 
     <div class="notification-box warning">
       <div class="notification-title">Warning</div>
@@ -309,7 +309,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </li>
     </ol>
 
-    <img src="https://i.imgur.com/WD6OnKX.png" alt="Optional Toggles Screenshot" style="max-width: 100%; height: auto; margin: 1rem 0; border-radius: 8px;">
+    <img src="https://i.imgur.com/WD6OnKX.png" alt="Optional Toggles Screenshot" style="max-width: 80%; height: auto; margin: 1rem 0; border-radius: 8px;">
 
     <div class="notification-box warning">
       <div class="notification-title">Warning</div>
