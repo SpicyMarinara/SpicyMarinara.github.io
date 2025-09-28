@@ -667,8 +667,12 @@ document.addEventListener('DOMContentLoaded', function() {
           <td>Proxy recommended by a friend. It offers a few models to choose from, including Opus and Sonnet with unlimited contexts. You pay either around $1 for unlimited requests per day of use, or for $2, you can buy 100 requests to use whenever you like. Tested, and everything works</td>
         </tr>
         <tr>
-          <td><a href="https://discord.gg/G3qVMhDZTe">4risu</a> <strong>ᴺᴱᵂ</strong></td>
+          <td><a href="https://discord.gg/G3qVMhDZTe">4risu</a></td>
           <td>I accidentally stumbled upon this proxy, but it proved awesome, and the owners are kind. Has a free tier and a paid tier with less downtime and more models to choose from. Just remember to grab an English role if you don't speak Spanish</td>
+        </tr>
+        <tr>
+          <td><a href="https://rentry.org/LLMAPI">LLMAPI</a> <strong>ᴺᴱᵂ</strong></td>
+          <td>A useful Rentry containing a list of all the available free and cheap API providers</td>
         </tr>
         <tr>
           <td><a href="https://openrouter.ai/">OpenRouter</a></td>
