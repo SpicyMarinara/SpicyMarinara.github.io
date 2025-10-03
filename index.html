@@ -291,7 +291,7 @@
 
                 <div class="notification-box warning">
                     <div class="notification-title">Warning</div>
-                    <div class="notification-content">Logit Bias works <strong>ONLY</strong> with OpenAI models (GPTs). I based mine on <a href="https://rentry.org/avaniJB">Avi's</a>, so all credit goes to them. <ins>Logit Bias is a must if you want to use OAI models.</ins></div>
+                    <div class="notification-content">Logit Bias works <strong>ONLY</strong> with OpenAI models (GPTs). I based mine on <a href="https://rentry.org/avaniJB">Avi's</a>, so all credit goes to them. <ins>Logit Bias is a must if you want to use OAI models, however, keep in mind GPT-5 Thinking does not support it.</ins></div>
                 </div>
 
                 <div class="notification-box tip">
@@ -411,7 +411,7 @@
 
                 <div class="notification-box note">
                     <div class="notification-title">Note</div>
-                    <div class="notification-content">Last updated on 22.09.2025</div>
+                    <div class="notification-content">Last updated on 03.10.2025</div>
                 </div>
 
                 <div class="notification-box tip">
@@ -439,17 +439,17 @@
                         <tr>
                         <tr>
                             <td>1</td>
-                            <td><a href="https://openrouter.ai/openai/gpt-5">GPT-5</a> <strong>ᴺᴱᵂ</strong></td>
-                            <td>400k</td>
-                            <td>Medium</td>
-                            <td>What, Opus is no longer the king?! After playing with both of these models, I have to give the first place to GPT-5. Don't get me wrong, it's a nightmare to prompt and jailbreak, but once you get a hang of it? It does <italics>everything</italics>. And I mean everything. You tell it not to do something? It listens. You tell it to write in a specific style? It does so, regardless where you were in the context. It has a great memory, as well</td>
-                            <td>A nightmare to prompt, and without a good one, it simply doesn't work. Is absolutely terrible without High thinking</td>
+                            <td><a href="https://openrouter.ai/anthropic/claude-sonnet-4.5">Sonnet 4.5</a> <strong>ᴺᴱᵂ</strong></td>
+                            <td>1mln</td>
+                            <td>Low</td>
+                            <td>They cooked with this one. It's smart, follows instructions well, has a good writing style, and fixes Opus's repetition issue on higher contexts. I'm hyped for Opus 4.5</td>
+                            <td>You can't really control its style, so if you don't like it, you have to either get used to it or switch a model</td>
                         </tr>
                             <td>2</td>
                             <td><a href="https://openrouter.ai/anthropic/claude-opus-4.1">Claude Opus 4.1</a></td>
                             <td>200k</td>
                             <td>Low</td>
-                            <td>Still the smartest one on the list, with a unique writing style and creativity. <span class="strikethrough">Opus can't be beat. It's impossible. The writing is too good. The smarts even more so. Nothing else compares right now.</span> Opus can be beat, TLD on suicide watch.</td>
+                            <td>Still the smartest one on the list, with a unique writing style and creativity. <span class="strikethrough">Opus can't be beat. It's impossible. The writing is too good. The smarts even more so. Nothing else compares right now.</span> Is TLD still on suicide watch, if Sonnet took the first spot?</td>
                             <td>Extremely expensive to use regularly and falls into repetetive patterns quickly. Works meh on higher contexts</td>
                         </tr>
                         <tr>
@@ -462,6 +462,14 @@
                         </tr>
                         <tr>
                             <td>4</td>
+                            <td><a href="https://openrouter.ai/openai/gpt-5">GPT-5</a></td>
+                            <td>400k</td>
+                            <td>Medium</td>
+                            <td>Anthropic won again. GPT-5 falls down a few spots, because it works worse somehow recently? Not sure what they changed, but you can tell it got more robotic than it used to be</td>
+                            <td>A nightmare to prompt, and without a good one, it simply doesn't work. Is absolutely terrible without High thinking</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
                             <td><a href="https://openrouter.ai/anthropic/claude-sonnet-4">Claude Sonnet 4</a></td>
                             <td>200k</td>
                             <td>Low</td>
@@ -469,7 +477,7 @@
                             <td>Lacks 3.7's creative spark and is very passive</td>
                         </tr>
                         <tr>
-                            <td>5</td>
+                            <td>6</td>
                             <td><a href="https://openrouter.ai/openai/gpt-5-chat">GPT-5 Chat</a></td>
                             <td>128k</td>
                             <td>None</td>
@@ -477,7 +485,7 @@
                             <td>As all the other OAI models, it requires regexes and a logit bias to be good, plus its prose is worse than ChatGPT-4o's</td>
                         </tr>
                         <tr>
-                            <td>6</td>
+                            <td>7</td>
                             <td><a href="https://openrouter.ai/anthropic/claude-3.7-sonnet">Claude Sonnet 3.7</a></td>
                             <td>200k</td>
                             <td>None</td>
@@ -485,7 +493,15 @@
                             <td>A little outdated</td>
                         </tr>
                         <tr>
-                            <td>7</td>
+                            <td>8</td>
+                            <td><a href="https://openrouter.ai/x-ai/grok-4-fast:free">Grok 4 Fast (Free)</a> <strong>ᴺᴱᵂ</strong></td>
+                            <td>2mln</td>
+                            <td>Low</td>
+                            <td>A very hit-or-miss model - sometimes it's peak, sometimes it produces absolute garbage. It's only higher than Gemini 2.5, because it's available for free as of now</td>
+                            <td>You will have to re-generate a lot with this one</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
                             <td><a href="https://openrouter.ai/google/gemini-2.5-pro">Gemini 2.5 Pro</a>/<a href="https://openrouter.ai/google/gemini-2.5-flash">Flash</a></td>
                             <td>1mln</td>
                             <td>Medium</td>
@@ -493,7 +509,7 @@
                             <td>Echoing hell ("echoing?"), stiff prose with no logit bias to control some tokens' usage (prepare for a lot of "then" and "didn't"), it's a 50/50 chance the model is lobotomized on the day you use it</td>
                         </tr>
                         <tr>
-                            <td>8</td>
+                            <td>10</td>
                             <td><a href="https://openrouter.ai/moonshotai/kimi-k2-0905">Kimi K2 0905 <strong>ᴺᴱᵂ</strong></a></td>
                             <td>260k</td>
                             <td>Low</td>
@@ -501,7 +517,7 @@
                             <td>Still not great at higher contexts (above 32k), and still lacking that extra polish</td>
                         </tr>
                         <tr>
-                            <td>9</td>
+                            <td>11</td>
                             <td><a href="https://openrouter.ai/deepseek/deepseek-r1-0528">DeepSeek R1</a>/<a href="https://openrouter.ai/deepseek/deepseek-chat-v3-0324">V3</a></td>
                             <td>163k</td>
                             <td>None</td>
@@ -509,7 +525,7 @@
                             <td>Hard to control and struggles with repetition</td>
                         </tr>
                         <tr>
-                            <td>10</td>
+                            <td>12</td>
                             <td><a href="https://openrouter.ai/openai/gpt-4.1">GPT-4.1</a></td>
                             <td>1mln</td>
                             <td>Low</td>
@@ -517,7 +533,7 @@
                             <td>Unusable without proper regexes and a logit bias, somewhat lacking in smarts</td>
                         </tr>
                         <tr>
-                            <td>11</td>
+                            <td>13</td>
                             <td><a href="https://openrouter.ai/x-ai/grok-4">Grok 4</a></td>
                             <td>256k</td>
                             <td>None</td>
@@ -525,7 +541,7 @@
                             <td>It's like a teenager going through puberty, so horny and not very smart</td>
                         </tr>
                         <tr>
-                            <td>12</td>
+                            <td>14</td>
                             <td><a href="https://openrouter.ai/deepseek/deepseek-chat-v3.1">DeepSeek V3.1</a> <strong>ᴺᴱᵂ</strong></td>
                             <td>165k</td>
                             <td>Low</td>
@@ -565,7 +581,7 @@
                     <tbody>
                         <tr>
                             <td><a href="https://crystalsraw.me/models">Crystal Proxy</a></td>
-                            <td>Proxy of my trusted friend. For just $20 a month, you can get access to every big model out there. I highly recommend checking it out, even if it's to hang out with us on her Discord server</td>
+                            <td><s>Proxy of my trusted friend. For just $20 a month, you can get access to every big model out there. I highly recommend checking it out, even if it's to hang out with us on her Discord server.</s> No longer accepting new members for now</td>
                         </tr>
                         <tr>
                             <td><a href="https://rentry.org/anas_proxy">Anas Proxy</a></td>
@@ -574,6 +590,10 @@
                         <tr>
                             <td><a href="https://discord.gg/G3qVMhDZTe">4risu</a> <strong>ᴺᴱᵂ</strong></td>
                             <td>I accidentally stumbled upon this proxy, but it proved awesome, and the owners are kind. Has a free tier and a paid tier with less downtime and more models to choose from. Just remember to grab an English role if you don't speak Spanish</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://discord.gg/Ku8YSRndFm">Mprox</a> <strong>ᴺᴱᵂ</strong></td>
+                            <td>Good friend of mine, he's been my main GPT-5 supplier for a while now. He doesn't have as many models to choose from as others, but his endpoints accept parameters such as temperature or logit bias. If you're looking to use OpenAI models, check him out</td>
                         </tr>
                         <tr>
                             <td><a href="https://openrouter.ai/">OpenRouter</a></td>
