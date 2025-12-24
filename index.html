@@ -32,7 +32,12 @@
         <div class="tab-container">
             <div class="tab-nav">
                 <button class="tab-link active" onclick="showTab(event, 'about')">About</button>
-                <button class="tab-link" onclick="showTab(event, 'downloads')">Downloads</button>
+                <button class="tab-link" onclick="showTab(event, 'downloads')" style="position: relative;">
+                    <span style="position: absolute; top: -28px; left: 50%; transform: translateX(-50%); font-size: 0.75rem; color: var(--dottore-primary); font-weight: bold; white-space: nowrap;">
+                        NEW ↓
+                    </span>
+                    Downloads
+                </button>
                 <button class="tab-link" onclick="showTab(event, 'glossary')">Glossary</button>
                 <button class="tab-link" onclick="showTab(event, 'guides')">Guides</button>
                 <button class="tab-link" onclick="showTab(event, 'faq')">FAQ</button>
@@ -43,13 +48,13 @@
 
 
             <div id="downloads" class="tab-content">
-                <img src="https://i.imgur.com/PplBbNg.png" alt="Dottore Banner" style="max-width: 100%; height: auto; margin: 0 auto 2rem auto; border-radius: 8px; display: block;">
+                <img src="https://i.imgur.com/xKyVPl6.png" alt="Dottore Banner" style="max-width: 100%; height: auto; margin: 0 auto 2rem auto; border-radius: 8px; display: block;">
                 
                 <h1>Downloads</h1>
 
                 <div class="notification-box note">
                     <div class="notification-title">Note</div>
-                    <div class="notification-content">The newest version is 8.0. These presets are designed for <strong>SillyTavern</strong>.</div>
+                    <div class="notification-content">The newest version is 9.0. These presets are designed for <strong>SillyTavern</strong>.</div>
                 </div>
 
                 <div class="notification-box tip">
@@ -848,5 +853,61 @@
       </div>
 
     </footer>
+
+    <!-- Snow Effect -->
+    <style>
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            z-index: 9999;
+            user-select: none;
+            cursor: default;
+            animation-name: snowfall;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            color: #fff;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        }
+
+        @keyframes snowfall {
+            0% {
+                transform: translateY(0vh) translateX(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) translateX(50px);
+                opacity: 0.7;
+            }
+        }
+    </style>
+
+    <script>
+        // Create snowflakes
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            snowflake.innerHTML = '❄';
+            snowflake.style.left = Math.random() * window.innerWidth + 'px';
+            snowflake.style.fontSize = (Math.random() * 10 + 10) + 'px';
+            snowflake.style.opacity = Math.random() * 0.6 + 0.4;
+            snowflake.style.animationDuration = (Math.random() * 3 + 5) + 's';
+            snowflake.style.animationDelay = Math.random() * 5 + 's';
+            
+            document.body.appendChild(snowflake);
+
+            // Remove snowflake after animation
+            setTimeout(() => {
+                snowflake.remove();
+            }, 10000);
+        }
+
+        // Create snowflakes periodically
+        setInterval(createSnowflake, 200);
+        
+        // Create initial batch
+        for (let i = 0; i < 20; i++) {
+            setTimeout(createSnowflake, i * 100);
+        }
+    </script>
 </body>
 </html>
