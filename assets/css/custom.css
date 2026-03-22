@@ -4,8 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* === MARINARA ENGINE LAUNCH BANNER === */
-.engine-banner {
-  display: block;
+a.engine-banner {
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box;
   text-decoration: none !important;
   position: relative;
   z-index: 100;
@@ -13,6 +15,10 @@
   background: linear-gradient(90deg, #0d0015, #1a002e 30%, #2a0020 50%, #1a002e 70%, #0d0015);
   border-bottom: 2px solid var(--synthwave-pink);
   cursor: pointer;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: normal !important;
+  min-height: unset !important;
 }
 
 .engine-banner::before {
@@ -1632,13 +1638,13 @@ table tr:hover {
 }
 
 /* Custom link animations */
-a:not(.tab-link) {
+a:not(.tab-link):not(.engine-banner) {
   position: relative;
   display: inline-block;
   transition: all 0.3s ease;
 }
 
-a:not(.tab-link)::after {
+a:not(.tab-link):not(.engine-banner)::after {
   content: '';
   position: absolute;
   width: 0;
@@ -1650,11 +1656,11 @@ a:not(.tab-link)::after {
   box-shadow: 0 0 8px var(--synthwave-pink-glow);
 }
 
-a:not(.tab-link):hover::after {
+a:not(.tab-link):not(.engine-banner):hover::after {
   width: 100%;
 }
 
-a:not(.tab-link):hover {
+a:not(.tab-link):not(.engine-banner):hover {
   text-shadow: 0 0 8px var(--synthwave-pink-glow);
 }
 
