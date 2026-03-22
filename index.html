@@ -14,6 +14,20 @@
     </style>
 </head>
 <body>
+    <!-- Marinara Engine Launch Banner -->
+    <a href="https://github.com/SpicyMarinara/Marinara-Engine" target="_blank" rel="noopener" class="engine-banner">
+        <div class="engine-banner-inner">
+            <div class="engine-banner-scanline"></div>
+            <div class="engine-banner-content">
+                <span class="engine-banner-badge">NEW</span>
+                <span class="engine-banner-text">
+                    <strong>MARINARA ENGINE</strong> &mdash; NEW AI FRONTEND, OUT NOW
+                </span>
+                <span class="engine-banner-arrow">&rarr;</span>
+            </div>
+        </div>
+    </a>
+
     <div class="container">
         <div class="neon-title">
             <h1 class="neon-text">Marinara's LLM Hub</h1>
@@ -887,60 +901,45 @@
 
     </footer>
 
-    <!-- Snow Effect -->
-    <style>
-        .snowflake {
-            position: fixed;
-            top: -10px;
-            z-index: 9999;
-            user-select: none;
-            cursor: default;
-            animation-name: snowfall;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-            color: #fff;
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-        }
-
-        @keyframes snowfall {
-            0% {
-                transform: translateY(0vh) translateX(0);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(100vh) translateX(50px);
-                opacity: 0.7;
-            }
-        }
-    </style>
-
+    <!-- Ambient Particle Effect -->
+    <canvas id="particles" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;"></canvas>
     <script>
-        // Create snowflakes
-        function createSnowflake() {
-            const snowflake = document.createElement('div');
-            snowflake.classList.add('snowflake');
-            snowflake.innerHTML = '❄';
-            snowflake.style.left = Math.random() * window.innerWidth + 'px';
-            snowflake.style.fontSize = (Math.random() * 10 + 10) + 'px';
-            snowflake.style.opacity = Math.random() * 0.6 + 0.4;
-            snowflake.style.animationDuration = (Math.random() * 3 + 5) + 's';
-            snowflake.style.animationDelay = Math.random() * 5 + 's';
-            
-            document.body.appendChild(snowflake);
-
-            // Remove snowflake after animation
-            setTimeout(() => {
-                snowflake.remove();
-            }, 10000);
-        }
-
-        // Create snowflakes periodically
-        setInterval(createSnowflake, 200);
-        
-        // Create initial batch
-        for (let i = 0; i < 20; i++) {
-            setTimeout(createSnowflake, i * 100);
-        }
+        (function() {
+            const canvas = document.getElementById('particles');
+            const ctx = canvas.getContext('2d');
+            let w, h, particles = [];
+            function resize() { w = canvas.width = window.innerWidth; h = canvas.height = window.innerHeight; }
+            window.addEventListener('resize', resize); resize();
+            const colors = ['rgba(0,224,230,', 'rgba(255,45,146,', 'rgba(189,0,255,'];
+            for (let i = 0; i < 40; i++) {
+                particles.push({
+                    x: Math.random() * w, y: Math.random() * h,
+                    r: Math.random() * 2 + 0.5,
+                    dx: (Math.random() - 0.5) * 0.3,
+                    dy: (Math.random() - 0.5) * 0.3,
+                    c: colors[Math.floor(Math.random() * colors.length)],
+                    a: Math.random() * 0.4 + 0.1,
+                    pa: 0, ps: Math.random() * 0.005 + 0.002
+                });
+            }
+            function draw() {
+                ctx.clearRect(0, 0, w, h);
+                particles.forEach(p => {
+                    p.x += p.dx; p.y += p.dy; p.pa += p.ps;
+                    const alpha = p.a + Math.sin(p.pa) * 0.15;
+                    if (p.x < 0) p.x = w; if (p.x > w) p.x = 0;
+                    if (p.y < 0) p.y = h; if (p.y > h) p.y = 0;
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = p.c + alpha + ')';
+                    ctx.shadowBlur = 8;
+                    ctx.shadowColor = p.c + '0.3)';
+                    ctx.fill();
+                });
+                requestAnimationFrame(draw);
+            }
+            draw();
+        })();
     </script>
 </body>
 </html>

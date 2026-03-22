@@ -3,6 +3,118 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
+/* === MARINARA ENGINE LAUNCH BANNER === */
+.engine-banner {
+  display: block;
+  text-decoration: none !important;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  background: linear-gradient(90deg, #0d0015, #1a002e 30%, #2a0020 50%, #1a002e 70%, #0d0015);
+  border-bottom: 2px solid var(--synthwave-pink);
+  cursor: pointer;
+}
+
+.engine-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 45, 146, 0.08), rgba(189, 0, 255, 0.08), transparent);
+  animation: bannerShimmer 3s ease-in-out infinite;
+}
+
+@keyframes bannerShimmer {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.engine-banner-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.engine-banner-scanline {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.08) 2px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+  pointer-events: none;
+}
+
+.engine-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.85rem 1.5rem;
+  position: relative;
+}
+
+.engine-banner-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff2d92, #bd00ff);
+  color: #fff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  box-shadow: 0 0 12px rgba(255, 45, 146, 0.5), 0 0 24px rgba(189, 0, 255, 0.3);
+  animation: badgePulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes badgePulse {
+  0%, 100% { box-shadow: 0 0 12px rgba(255, 45, 146, 0.5), 0 0 24px rgba(189, 0, 255, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(255, 45, 146, 0.7), 0 0 36px rgba(189, 0, 255, 0.5); }
+}
+
+.engine-banner-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  background: linear-gradient(90deg, #ff2d92, #ff6eb4, #bd00ff, #00e0e6);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: bannerTextShift 4s linear infinite;
+}
+
+.engine-banner-text strong {
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes bannerTextShift {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.engine-banner-arrow {
+  font-size: 1.3rem;
+  color: #00e0e6;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  -webkit-text-fill-color: initial;
+}
+
+.engine-banner:hover .engine-banner-arrow {
+  transform: translateX(4px);
+}
+
+.engine-banner:hover {
+  border-bottom-color: #00e0e6;
+}
+
 /* Custom CSS Variables */
 /* === ROOT VARIABLES === */
 :root {
@@ -814,6 +926,23 @@ blockquote {
 
 /* === RESPONSIVE DESIGN === */
 @media (max-width: 768px) {
+  /* Banner mobile */
+  .engine-banner-content {
+    gap: 0.6rem;
+    padding: 0.7rem 1rem;
+  }
+  .engine-banner-text {
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+  }
+  .engine-banner-badge {
+    font-size: 0.6rem;
+    padding: 0.15rem 0.45rem;
+  }
+  .engine-banner-arrow {
+    font-size: 1rem;
+  }
+
   /* Disable ALL flashing animations on mobile */
   *, *::before, *::after {
     animation: none !important;
@@ -1198,6 +1327,16 @@ blockquote {
 
 /* Extra small devices (phones in portrait) */
 @media (max-width: 480px) {
+  .engine-banner-content {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0.6rem 0.75rem;
+    text-align: center;
+  }
+  .engine-banner-text {
+    font-size: 0.68rem;
+  }
+
   /* Force dark theme on mobile */
   html, body {
     background-color: var(--dottore-dark) !important;
