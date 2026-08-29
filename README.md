@@ -748,9 +748,6 @@ document.addEventListener('DOMContentLoaded', function() {
     <h2>Discord:</h2>
     <p><code>marinara_spaghetti</code></p>
 
-    <h2>E-mail:</h2>
-    <p><code>mgrabower97@gmail.com</code></p>
-
     <h2>Socials:</h2>
     <p><code><a href="https://linktr.ee/Spicy_Marinara">https://linktr.ee/Spicy_Marinara</a></code></p>
   </div>
